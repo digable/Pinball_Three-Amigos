@@ -1,0 +1,33 @@
+#config_version=5
+
+keyboard:
+    a:
+        switch: s_left_flipper
+    z:
+        switch: s_right_flipper
+    s:
+        switch: s_start
+    p:
+        switch: s_plunger_lane
+    1:
+        switch: s_trough1
+    2:
+        switch: s_trough2
+    3:
+        switch: s_trough3
+    4:
+        switch: s_trough4
+    5:
+        switch: s_trough_jam
+    9:
+        switch: s_left_slingshot
+    0:
+        switch: s_right_slingshot
+    x:
+        switch: s_drop_target_left
+    c:
+        switch: s_drop_target_middle
+    v:
+        switch: s_drop_target_right
+    b:
+        switch: s_tilt
