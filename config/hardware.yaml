@@ -1,5 +1,29 @@
 #config_version=5
 
+displays:
+    window:
+        width: 1366
+        height: 768
+
+slides:
+    welcome_slide:
+        widgets:
+              - type: image
+                image: ZukiDogLogo
+    attract_started:
+        widgets:
+              - type: text
+                text: Attract Mode!!!!!
+    widgets_ball_started:
+        widgets:
+              - type: text
+                text: PLAYER (number) BALL (ball)
+
+slide_player:
+    init_done: welcome_slide
+    mode_attract_started: attract_started
+    ball_started: widgets_ball_started
+
 switches:
     s_left_flipper:
         number: A1-B0-1
@@ -129,12 +153,12 @@ flippers:
         main_coil: c_flipper_left_main
         hold_coil: c_flipper_left_hold
         activation_switch: s_left_flipper
-        enable_events: machine_reset_phase_3
+        #enable_events: machine_reset_phase_3
     right_flipper:
         main_coil: c_flipper_right_main
         hold_coil: c_flipper_right_hold
         activation_switch: s_right_flipper
-        enable_events: machine_reset_phase_3
+        #enable_events: machine_reset_phase_3
 
 drop_targets:
     dt_1_left:

@@ -1,9 +1,13 @@
 #config_version=5
 
 hardware:
-#    platform: p3_roc #INFO: comment for virtual
-#    driverboards: pdb #INFO: comment for virtual
-    platform: smart_virtual #INFO: UNcomment for virtual
+    platform: p3_roc
+#    platform: smart_virtual #mpf both -X to run virtual platform now
+
+p_roc:
+  driverboards: pdb
+  use_watchdog: true
+  watchdog_time: 1s
 
 config:
 - hardware.yaml
