@@ -70,6 +70,8 @@ switches:
         number: A0-B0-6
     s_right_slingshot:
         number: A0-B0-7
+    s_right_jet:
+        number: A2-B0-0
     s_drop_target_left:
         number: A0-B1-0
         type: NC
@@ -118,9 +120,9 @@ coils:
     c_drop_target_reset:
         number: A0-B1-4
         default_pulse_ms: 60
-    #c_dummy_2:
-    #    number: A2-B0-0
-    #    default_pulse_ms: 5
+    c_right_jet:
+        number: A0-B0-4
+        default_pulse_ms: 5
 
 autofire_coils:
     left_slingshot:
@@ -129,6 +131,9 @@ autofire_coils:
     right_slingshot:
         coil: c_right_slingshot
         switch: s_right_slingshot
+    right_jet:
+        coil: c_right_jet
+        switch: s_right_jet
 
 ball_devices:
     bd_trough:
