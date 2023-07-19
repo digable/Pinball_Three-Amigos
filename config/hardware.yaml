@@ -11,8 +11,8 @@ window:
   height: 768
   title: Amigos
   resizable: false
-  fullscreen: true
-  borderless: true
+  fullscreen: false
+  borderless: false
   exit_on_escape: true
   source_display: window
 
