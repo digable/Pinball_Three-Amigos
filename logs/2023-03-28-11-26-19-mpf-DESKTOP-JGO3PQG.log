@@ -1,0 +1,184 @@
+2023-03-28 11:26:19,462 : INFO : root : Loading config.
+2023-03-28 11:26:19,477 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2023-03-28 11:26:19,477 : INFO : ConfigProcessor : Loading config from cache: C:\Users\digidev\AppData\Local\Temp\207a4012de915441e2519cedb288d8b5.mpf_cache
+2023-03-28 11:26:19,587 : INFO : ConfigProcessor : Loading config from cache: C:\Users\digidev\AppData\Local\Temp\ae663e8f24481bd52f7f5e9610d87d3b.mpf_cache
+2023-03-28 11:26:19,587 : INFO : ConfigProcessor : Loading config from cache: C:\Users\digidev\AppData\Local\Temp\d7dbd5ece0283f90787e254e6a383d33.mpf_cache
+2023-03-28 11:26:19,602 : INFO : Machine : Mission Pinball Framework Core Engine v0.56.0
+2023-03-28 11:26:19,602 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'jsonlogging': False, 'logfile': 'logs\\2023-03-28-11-26-19-mpf-DESKTOP-JGO3PQG.log', 'pause': False, 'production': False, 'text_ui': False, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': 'smart_virtual', 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2023-03-28 11:26:19,602 : INFO : Machine : MPF path: C:\Users\digidev\.local\pipx\venvs\mpf\lib\site-packages\mpf
+2023-03-28 11:26:19,602 : INFO : Machine : Machine path: C:\Users\digidev\source\Pinball_Three-Amigos
+2023-03-28 11:26:19,602 : INFO : Machine : Platform: win32
+2023-03-28 11:26:19,602 : INFO : Machine : Python executable location: C:\Users\digidev\.local\pipx\venvs\mpf\Scripts\python.exe
+2023-03-28 11:26:19,602 : INFO : Machine : Python version: 3.9.13 (64-bit)
+2023-03-28 11:26:19,602 : INFO : Machine : Initialise MPF.
+2023-03-28 11:26:19,712 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2023-03-28 11:26:19,790 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2023-03-28 11:26:19,790 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.56.0', 'prev_value': None, 'change': True}
+2023-03-28 11:26:19,790 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.56.0, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2023-03-28 11:26:19,790 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.9.13', 'prev_value': None, 'change': True}
+2023-03-28 11:26:19,805 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.19044-SP0', 'prev_value': None, 'change': True}
+2023-03-28 11:26:19,805 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2023-03-28 11:26:19,805 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2023-03-28 11:26:19,805 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.19044', 'prev_value': None, 'change': True}
+2023-03-28 11:26:19,805 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2023-03-28 11:26:19,805 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2023-03-28 11:26:19,837 : INFO : EventManager : Event: ======'drop_target_bank_dt_bank_up'====== Args={}
+2023-03-28 11:26:19,837 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2023-03-28 11:26:19,837 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2023-03-28 11:26:19,837 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2023-03-28 11:26:21,871 : INFO : BCPClientSocket : Connected BCP to 'local_display' localhost:5050
+2023-03-28 11:26:21,874 : INFO : EventManager : Event: ======'bcp_clients_connected'====== Args={}
+2023-03-28 11:26:21,876 : INFO : ball_device.bd_trough : BCH: Initial count: 0
+2023-03-28 11:26:21,877 : INFO : ball_device.bd_trough : State: idle
+2023-03-28 11:26:21,878 : INFO : ball_device.bd_plunger : BCH: Initial count: 0
+2023-03-28 11:26:21,879 : INFO : ball_device.bd_plunger : State: idle
+2023-03-28 11:26:21,904 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2023-03-28 11:26:21,913 : INFO : EventManager : Event: ======'machine_var_mc_version'====== Args={'value': 'MPF-MC v0.56.1', 'prev_value': None, 'change': True}
+2023-03-28 11:26:21,913 : INFO : EventManager : Event: ======'machine_var_mc_extended_version'====== Args={'value': 'MPF-MC v0.56.1 (config_version=5, BCP v1.1,                      Requires MPF API compatibility v0.56.0 or newer)', 'prev_value': None, 'change': True}
+2023-03-28 11:26:21,915 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2023-03-28 11:26:21,917 : INFO : BallController : Initial balls found: 0
+2023-03-28 11:26:21,919 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-03-28 11:26:21,920 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-03-28 11:26:21,920 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough1'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-03-28 11:26:21,920 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough2'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-03-28 11:26:21,921 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough3'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-03-28 11:26:21,921 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough4'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-03-28 11:26:21,921 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough_jam'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-03-28 11:26:21,921 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_plunger_lane'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-03-28 11:26:21,922 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_start'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-03-28 11:26:21,922 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_slingshot'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-03-28 11:26:21,923 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_slingshot'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-03-28 11:26:21,923 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_drop_target_left'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-03-28 11:26:21,923 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_drop_target_middle'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-03-28 11:26:21,923 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_drop_target_right'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-03-28 11:26:21,924 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_tilt'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-03-28 11:26:21,924 : INFO : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-03-28 11:26:21,924 : INFO : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2023-03-28 11:26:21,924 : INFO : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'top': [], 'average': 0, 'total': 0}, 'prev_value': None, 'change': True}
+2023-03-28 11:26:21,925 : INFO : EventManager : Event: ======'init_phase_5'====== Args={}
+2023-03-28 11:26:21,926 : INFO : EventManager : Event: ======'init_done'====== Args={}
+2023-03-28 11:26:21,927 : INFO : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2023-03-28 11:26:21,994 : INFO : EventManager : Event: ======'slide_welcome_slide_removed'====== Args={'_from_bcp': True}
+2023-03-28 11:26:21,998 : INFO : EventManager : Event: ======'slide_welcome_slide_created'====== Args={'_from_bcp': True}
+2023-03-28 11:26:22,008 : INFO : EventManager : Event: ======'slide_welcome_slide_active'====== Args={'_from_bcp': True}
+2023-03-28 11:26:22,009 : INFO : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2023-03-28 11:26:22,009 : INFO : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2023-03-28 11:26:22,010 : INFO : EventManager : Event: ======'reset_complete'====== Args={}
+2023-03-28 11:26:22,010 : INFO : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2023-03-28 11:26:22,011 : INFO : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2023-03-28 11:26:22,012 : INFO : Mode.attract : Started. Priority: 10
+2023-03-28 11:26:22,012 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2023-03-28 11:26:22,012 : INFO : EventManager : Event: ======'mode_attract_started'====== Args={}
+2023-03-28 11:26:22,013 : INFO : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2023-03-28 11:26:22,016 : INFO : Machine : Starting the main run loop.
+2023-03-28 11:26:22,046 : INFO : EventManager : Event: ======'slide_attract_started_created'====== Args={'_from_bcp': True}
+2023-03-28 11:26:22,047 : INFO : EventManager : Event: ======'slide_attract_started_active'====== Args={'_from_bcp': True}
+2023-03-28 11:26:42,696 : INFO : SwitchController : <<<<<<< 's_start' active >>>>>>>
+2023-03-28 11:26:42,757 : INFO : SwitchController : <<<<<<< 's_start' inactive >>>>>>>
+2023-03-28 11:26:42,758 : INFO : EventManager : Event: ======'request_to_start_game'====== Args={}
+2023-03-28 11:26:42,758 : INFO : BallController : Known balls: 0
+2023-03-28 11:26:42,759 : INFO : BallController : bd_trough contains 0 balls. Tags ['trough', 'home', 'drain']
+2023-03-28 11:26:42,759 : INFO : BallController : bd_plunger contains 0 balls. Tags []
+2023-03-28 11:26:42,759 : INFO : BallController : playfield contains 0 balls. Tags ['default']
+2023-03-28 11:26:42,759 : WARNING : BallController : BallController denies game start. Not enough balls. 0 found. 1 required
+2023-03-28 11:26:42,759 : INFO : BallController : Triggering ball search.
+2023-03-28 11:26:42,760 : INFO : BallSearch.playfield : Starting ball search
+2023-03-28 11:26:42,760 : INFO : EventManager : Event: ======'ball_search_started'====== Args={}
+2023-03-28 11:26:42,760 : INFO : EventManager : Event: ======'ball_search_phase_1'====== Args={'iteration': 1}
+2023-03-28 11:26:42,760 : INFO : coil.c_left_slingshot : Pulsing Driver for 5ms (1.0 pulse_power)
+2023-03-28 11:26:43,036 : INFO : coil.c_right_slingshot : Pulsing Driver for 5ms (1.0 pulse_power)
+2023-03-28 11:26:43,300 : INFO : coil.c_trough_eject : Pulsing Driver for 20ms (1.0 pulse_power)
+2023-03-28 11:26:43,566 : INFO : coil.c_plunger : Pulsing Driver for 20ms (1.0 pulse_power)
+2023-03-28 11:26:43,832 : INFO : EventManager : Event: ======'ball_search_phase_1'====== Args={'iteration': 2}
+2023-03-28 11:26:43,833 : INFO : coil.c_left_slingshot : Pulsing Driver for 5ms (1.0 pulse_power)
+2023-03-28 11:26:53,845 : INFO : coil.c_right_slingshot : Pulsing Driver for 5ms (1.0 pulse_power)
+2023-03-28 11:26:54,111 : INFO : coil.c_trough_eject : Pulsing Driver for 20ms (1.0 pulse_power)
+2023-03-28 11:26:54,376 : INFO : coil.c_plunger : Pulsing Driver for 20ms (1.0 pulse_power)
+2023-03-28 11:26:54,628 : INFO : EventManager : Event: ======'ball_search_phase_1'====== Args={'iteration': 3}
+2023-03-28 11:26:54,628 : INFO : coil.c_left_slingshot : Pulsing Driver for 5ms (1.0 pulse_power)
+2023-03-28 11:26:56,053 : INFO : SwitchController : <<<<<<< 's_plunger_lane' active >>>>>>>
+2023-03-28 11:26:56,310 : INFO : EventManager : Event: ======'plunger_lane_checked'====== Args={}
+2023-03-28 11:26:56,358 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_count_changed'====== Args={'balls': 1}
+2023-03-28 11:26:56,358 : INFO : ball_device.bd_plunger : Received unexpected ball
+2023-03-28 11:26:56,358 : INFO : EventManager : Event: ======'balldevice_captured_from_playfield'====== Args={'balls': 1}
+2023-03-28 11:26:56,359 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={'balls': 1}
+2023-03-28 11:26:56,359 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2023-03-28 11:26:56,359 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2023-03-28 11:26:56,360 : INFO : BallSearch.playfield : Stopping ball search
+2023-03-28 11:26:56,360 : INFO : EventManager : Event: ======'ball_search_stopped'====== Args={}
+2023-03-28 11:26:56,360 : INFO : EventManager : Event: ======'playfield_ball_count_change'====== Args={'balls': -1, 'change': -1}
+2023-03-28 11:26:56,361 : INFO : EventManager : Event: ======'balldevice_playfield_ball_enter'====== Args={'new_balls': 1, 'unclaimed_balls': 1, 'device': <playfield.playfield>}
+2023-03-28 11:26:56,361 : INFO : EventManager : Event: ======'playfield_ball_count_change'====== Args={'balls': 0, 'change': 1}
+2023-03-28 11:26:56,361 : INFO : BallController : Found a new ball which was captured from playfield. Known balls: 1
+2023-03-28 11:26:56,362 : INFO : EventManager : Event: ======'found_new_ball'====== Args={}
+2023-03-28 11:26:56,362 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_enter'====== Args={'new_balls': 1, 'unclaimed_balls': 1, 'new_available_balls': 1, 'device': <ball_device.bd_plunger>}
+2023-03-28 11:26:56,363 : INFO : ball_device.bd_plunger : Ejecting 1 unexpected balls using path deque([<ball_device.bd_plunger>, <playfield.playfield>])
+2023-03-28 11:26:56,363 : INFO : EventManager : Event: ======'balldevice_balls_available'====== Args={}
+2023-03-28 11:26:56,363 : INFO : EventManager : Event: ======'balldevice_balls_available'====== Args={}
+2023-03-28 11:26:56,363 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_entered'====== Args={'new_balls': 1, 'device': <ball_device.bd_plunger>}
+2023-03-28 11:26:56,365 : INFO : ball_device.bd_plunger : State: waiting_for_target_ready
+2023-03-28 11:26:56,365 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_attempt'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 0}
+2023-03-28 11:26:56,366 : INFO : ball_device.bd_plunger : State: ejecting
+2023-03-28 11:26:56,366 : INFO : ball_device.bd_plunger : Ejecting ball to <playfield.playfield>
+2023-03-28 11:26:56,366 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ejecting_ball'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': False, 'num_attempts': 0}
+2023-03-28 11:26:56,367 : INFO : ball_device.bd_plunger : Wait for ball to leave device
+2023-03-28 11:26:56,368 : INFO : coil.c_plunger : Pulsing Driver for 20ms (1.0 pulse_power)
+2023-03-28 11:26:56,368 : INFO : SwitchController : <<<<<<< 's_plunger_lane' inactive >>>>>>>
+2023-03-28 11:26:56,368 : INFO : EventManager : Event: ======'plunger_lane_released'====== Args={}
+2023-03-28 11:26:56,370 : INFO : ball_device.bd_plunger : State: ball_left
+2023-03-28 11:26:56,370 : INFO : ball_device.bd_plunger : Ball left
+2023-03-28 11:26:56,371 : INFO : ball_device.bd_plunger : Wait for confirm with timeout 2.0
+2023-03-28 11:26:58,383 : INFO : ball_device.bd_plunger : State: failed_confirm
+2023-03-28 11:26:58,384 : INFO : ball_device.bd_plunger : Got timeout (2.0s) before confirm from <playfield.playfield>
+2023-03-28 11:26:58,492 : INFO : ball_device.bd_plunger : Confirming eject because target is playfield and ball did not return.
+2023-03-28 11:26:58,492 : INFO : ball_device.bd_plunger : Eject successful
+2023-03-28 11:26:58,493 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_success'====== Args={'balls': 1, 'target': <playfield.playfield>}
+2023-03-28 11:26:58,493 : INFO : EventManager : Event: ======'balldevice_playfield_ball_enter'====== Args={'new_balls': 1, 'unclaimed_balls': 1, 'device': <playfield.playfield>}
+2023-03-28 11:26:58,493 : INFO : EventManager : Event: ======'playfield_ball_count_change'====== Args={'balls': 1, 'change': 1}
+2023-03-28 11:26:58,494 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_count_changed'====== Args={'balls': 0}
+2023-03-28 11:26:58,494 : INFO : ball_device.bd_plunger : State: idle
+2023-03-28 11:27:15,215 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_plunger_lane from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.56/logs/Log-SwitchController-1.html)
+2023-03-28 11:27:18,510 : INFO : BallSearch.playfield : Starting ball search
+2023-03-28 11:27:18,510 : INFO : EventManager : Event: ======'ball_search_started'====== Args={}
+2023-03-28 11:27:18,510 : INFO : EventManager : Event: ======'ball_search_phase_1'====== Args={'iteration': 1}
+2023-03-28 11:27:18,510 : INFO : coil.c_left_slingshot : Pulsing Driver for 5ms (1.0 pulse_power)
+2023-03-28 11:27:18,774 : INFO : coil.c_right_slingshot : Pulsing Driver for 5ms (1.0 pulse_power)
+2023-03-28 11:27:19,037 : INFO : coil.c_trough_eject : Pulsing Driver for 20ms (1.0 pulse_power)
+2023-03-28 11:27:19,288 : INFO : coil.c_plunger : Pulsing Driver for 20ms (1.0 pulse_power)
+2023-03-28 11:27:19,553 : INFO : EventManager : Event: ======'ball_search_phase_1'====== Args={'iteration': 2}
+2023-03-28 11:27:19,553 : INFO : coil.c_left_slingshot : Pulsing Driver for 5ms (1.0 pulse_power)
+2023-03-28 11:27:29,559 : INFO : coil.c_right_slingshot : Pulsing Driver for 5ms (1.0 pulse_power)
+2023-03-28 11:27:29,825 : INFO : coil.c_trough_eject : Pulsing Driver for 20ms (1.0 pulse_power)
+2023-03-28 11:27:30,088 : INFO : coil.c_plunger : Pulsing Driver for 20ms (1.0 pulse_power)
+2023-03-28 11:27:30,352 : INFO : EventManager : Event: ======'ball_search_phase_1'====== Args={'iteration': 3}
+2023-03-28 11:27:30,352 : INFO : coil.c_left_slingshot : Pulsing Driver for 5ms (1.0 pulse_power)
+2023-03-28 11:27:37,663 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2023-03-28 11:27:37,736 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2023-03-28 11:27:40,372 : INFO : coil.c_right_slingshot : Pulsing Driver for 5ms (1.0 pulse_power)
+2023-03-28 11:27:40,636 : INFO : coil.c_trough_eject : Pulsing Driver for 20ms (1.0 pulse_power)
+2023-03-28 11:27:40,901 : INFO : coil.c_plunger : Pulsing Driver for 20ms (1.0 pulse_power)
+2023-03-28 11:27:41,165 : INFO : EventManager : Event: ======'ball_search_phase_1'====== Args={'iteration': 4}
+2023-03-28 11:27:41,166 : INFO : coil.c_left_slingshot : Pulsing Driver for 5ms (1.0 pulse_power)
+2023-03-28 11:27:44,033 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2023-03-28 11:27:44,119 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2023-03-28 11:27:44,576 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2023-03-28 11:27:44,638 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2023-03-28 11:27:44,773 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2023-03-28 11:27:44,835 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2023-03-28 11:27:45,601 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2023-03-28 11:27:45,663 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2023-03-28 11:27:45,775 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2023-03-28 11:27:45,837 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2023-03-28 11:27:46,145 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2023-03-28 11:27:46,219 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2023-03-28 11:27:46,330 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2023-03-28 11:27:46,392 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2023-03-28 11:27:47,249 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2023-03-28 11:27:47,322 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2023-03-28 11:27:47,831 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2023-03-28 11:27:47,917 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2023-03-28 11:27:48,092 : INFO : SwitchController : <<<<<<< 's_right_slingshot' active >>>>>>>
+2023-03-28 11:27:48,129 : INFO : SwitchController : <<<<<<< 's_right_slingshot' inactive >>>>>>>
+2023-03-28 11:27:51,064 : INFO : Machine : Shutting down...
+2023-03-28 11:27:51,065 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2023-03-28 11:27:51,074 : INFO : root : MPF run loop ended.

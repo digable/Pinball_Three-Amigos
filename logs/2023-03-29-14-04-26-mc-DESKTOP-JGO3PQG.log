@@ -1,0 +1,57 @@
+2023-03-29 14:04:26,695 : kivy : Factory: 189 symbols loaded
+2023-03-29 14:04:29,481 : kivy : ImageLoaderFFPy: Using ffpyplayer 4.3.5
+2023-03-29 14:04:29,481 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_ffpyplayer 
+2023-03-29 14:04:30,059 : kivy : VideoGstplayer: Using Gstreamer 1.18.5.0
+2023-03-29 14:04:30,059 : kivy : Video: Provider: gstplayer
+2023-03-29 14:04:30,773 : kivy : Loading MPF-MC controller
+2023-03-29 14:04:30,776 : YamlMultifileConfigLoader : Machine config file #1: config
+2023-03-29 14:04:30,777 : ConfigProcessor : Config file in cache changed: C:\Users\digidev\source\Pinball_Three-Amigos\config\config
+2023-03-29 14:04:30,778 : ConfigProcessor : Loading config from file C:\Users\digidev\.local\pipx\venvs\mpf\lib\site-packages\mpfmc\mcconfig.yaml.
+2023-03-29 14:04:30,831 : ConfigProcessor : Loading config: C:\Users\digidev\.local\pipx\venvs\mpf\lib\site-packages\mpfmc\mcconfig.yaml
+2023-03-29 14:04:30,831 : ConfigProcessor : Loading config from file C:\Users\digidev\source\Pinball_Three-Amigos\config\config.
+2023-03-29 14:04:30,838 : ConfigProcessor : Loading config: C:\Users\digidev\source\Pinball_Three-Amigos\config\config
+2023-03-29 14:04:30,895 : ConfigProcessor : Loading config: C:\Users\digidev\source\Pinball_Three-Amigos\config\hardware.yaml
+2023-03-29 14:04:30,912 : ConfigProcessor : Loading config: C:\Users\digidev\source\Pinball_Three-Amigos\config\keyboard.yaml
+2023-03-29 14:04:30,913 : ConfigProcessor : Config file cache created: C:\Users\digidev\AppData\Local\Temp\cb5b51b22bd45492aca32735a8adc5f5.mpf_cache
+2023-03-29 14:04:30,914 : ConfigProcessor : Loading config from cache: C:\Users\digidev\AppData\Local\Temp\ae663e8f24481bd52f7f5e9610d87d3b.mpf_cache
+2023-03-29 14:04:30,914 : ConfigProcessor : Loading config from cache: C:\Users\digidev\AppData\Local\Temp\d7dbd5ece0283f90787e254e6a383d33.mpf_cache
+2023-03-29 14:04:30,915 : mpfmc : Mission Pinball Framework Media Controller v0.56.1
+2023-03-29 14:04:30,915 : mpfmc : Mission Pinball Framework Game Engine v0.56.0
+2023-03-29 14:04:30,915 : mpfmc : Machine path: C:\Users\digidev\source\Pinball_Three-Amigos
+2023-03-29 14:04:30,915 : mpfmc : Starting clock at 60.0Hz
+2023-03-29 14:04:31,130 : kivy : Text: Provider: sdl2
+2023-03-29 14:04:31,490 : kivy : Window: Provider: sdl2
+2023-03-29 14:04:31,984 : kivy : GL: Using the "OpenGL" graphics system
+2023-03-29 14:04:31,985 : kivy : GL: GLEW initialization succeeded
+2023-03-29 14:04:31,985 : kivy : GL: Backend used <glew>
+2023-03-29 14:04:31,986 : kivy : GL: OpenGL version <b'4.3.0 - Build 20.19.15.4531'>
+2023-03-29 14:04:31,986 : kivy : GL: OpenGL vendor <b'Intel'>
+2023-03-29 14:04:31,986 : kivy : GL: OpenGL renderer <b'Intel(R) HD Graphics 4600'>
+2023-03-29 14:04:31,986 : kivy : GL: OpenGL parsed version: 4, 3
+2023-03-29 14:04:31,986 : kivy : GL: Shading version <b'4.30 - Build 20.19.15.4531'>
+2023-03-29 14:04:31,986 : kivy : GL: Texture max size <16384>
+2023-03-29 14:04:31,986 : kivy : GL: Texture max units <32>
+2023-03-29 14:04:32,121 : kivy : Window: auto add sdl2 input provider
+2023-03-29 14:04:32,136 : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2023-03-29 14:04:32,173 : SoundSystem : SoundSystem: Using default 'sound_system' settings
+2023-03-29 14:04:37,751 : AudioInterface : Initialized
+2023-03-29 14:04:37,751 : AudioInterface : Loaded SDL 2.0.20
+2023-03-29 14:04:37,751 : AudioInterface : Loaded SDL_Mixer 2.0.4
+2023-03-29 14:04:37,751 : AudioInterface : Loaded GStreamer 1.18.5.0
+2023-03-29 14:04:37,751 : AudioInterface : Loaded GLib 2.62.6
+2023-03-29 14:04:37,752 : AudioInterface : Settings requested - rate: 44100, channels: 1, buffer: 2048 samples
+2023-03-29 14:04:37,752 : AudioInterface : Settings in use - rate: 44100, channels: 1, buffer: 2048 samples (4096 bytes @ 2 bytes per sample)
+2023-03-29 14:04:37,752 : SoundSystem : No audio tracks are specified in your machine config file. a track named 'default' has been created.
+2023-03-29 14:04:37,752 : SoundSystem : Setting master volume to 0.0
+2023-03-29 14:04:37,752 : SoundSystem : master_volume in sound_system is deprecated and will be removed in the future.
+2023-03-29 14:04:37,752 : AudioInterface : Enabling audio playback
+2023-03-29 14:04:37,754 : kivy : Base: Start application main loop
+2023-03-29 14:04:37,755 : EventManager : Event: ======'display_window_initialized'====== Args={}
+2023-03-29 14:04:37,781 : kivy : Base: Leaving application in progress...
+2023-03-29 14:04:37,954 : mpfmc : Stopping...
+2023-03-29 14:04:37,954 : EventManager : Event: ======'shutdown'====== Args={}
+2023-03-29 14:04:37,954 : AudioInterface : Disabling audio playback
+2023-03-29 14:04:37,954 : mpfmc : Loop rate 5.0 Hz
+2023-03-29 14:04:37,954 : kivy : MC run loop ended.
+2023-03-29 14:04:37,954 : kivy : Stopping child threads... (1 remaining)
+2023-03-29 14:04:38,755 : kivy : All child threads stopped.

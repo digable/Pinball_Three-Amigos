@@ -1,0 +1,83 @@
+2023-03-29 16:29:00,338 : kivy : Factory: 189 symbols loaded
+2023-03-29 16:29:00,617 : kivy : ImageLoaderFFPy: Using ffpyplayer 4.3.5
+2023-03-29 16:29:00,619 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_ffpyplayer 
+2023-03-29 16:29:00,764 : kivy : VideoGstplayer: Using Gstreamer 1.18.5.0
+2023-03-29 16:29:00,765 : kivy : Video: Provider: gstplayer
+2023-03-29 16:29:01,307 : kivy : Loading MPF-MC controller
+2023-03-29 16:29:01,318 : YamlMultifileConfigLoader : Machine config file #1: config
+2023-03-29 16:29:01,320 : ConfigProcessor : Config file in cache changed: C:\Users\digidev\source\Pinball_Three-Amigos\config\config
+2023-03-29 16:29:01,321 : ConfigProcessor : Loading config from file C:\Users\digidev\.local\pipx\venvs\mpf\lib\site-packages\mpfmc\mcconfig.yaml.
+2023-03-29 16:29:01,413 : ConfigProcessor : Loading config: C:\Users\digidev\.local\pipx\venvs\mpf\lib\site-packages\mpfmc\mcconfig.yaml
+2023-03-29 16:29:01,414 : ConfigProcessor : Loading config from file C:\Users\digidev\source\Pinball_Three-Amigos\config\config.
+2023-03-29 16:29:01,418 : ConfigProcessor : Loading config: C:\Users\digidev\source\Pinball_Three-Amigos\config\config
+2023-03-29 16:29:01,475 : ConfigProcessor : Loading config: C:\Users\digidev\source\Pinball_Three-Amigos\config\hardware.yaml
+2023-03-29 16:29:01,483 : ConfigProcessor : Loading config: C:\Users\digidev\source\Pinball_Three-Amigos\config\keyboard.yaml
+2023-03-29 16:29:01,485 : ConfigProcessor : Config file cache created: C:\Users\digidev\AppData\Local\Temp\cb5b51b22bd45492aca32735a8adc5f5.mpf_cache
+2023-03-29 16:29:01,486 : ConfigProcessor : Loading config from cache: C:\Users\digidev\AppData\Local\Temp\ae663e8f24481bd52f7f5e9610d87d3b.mpf_cache
+2023-03-29 16:29:01,487 : ConfigProcessor : Loading config from cache: C:\Users\digidev\AppData\Local\Temp\d7dbd5ece0283f90787e254e6a383d33.mpf_cache
+2023-03-29 16:29:01,488 : mpfmc : Mission Pinball Framework Media Controller v0.56.1
+2023-03-29 16:29:01,488 : mpfmc : Mission Pinball Framework Game Engine v0.56.0
+2023-03-29 16:29:01,488 : mpfmc : Machine path: C:\Users\digidev\source\Pinball_Three-Amigos
+2023-03-29 16:29:01,489 : mpfmc : Starting clock at 60.0Hz
+2023-03-29 16:29:01,516 : kivy : Text: Provider: sdl2
+2023-03-29 16:29:01,602 : kivy : Window: Provider: sdl2
+2023-03-29 16:29:01,835 : kivy : GL: Using the "OpenGL" graphics system
+2023-03-29 16:29:01,836 : kivy : GL: GLEW initialization succeeded
+2023-03-29 16:29:01,836 : kivy : GL: Backend used <glew>
+2023-03-29 16:29:01,836 : kivy : GL: OpenGL version <b'4.3.0 - Build 20.19.15.4531'>
+2023-03-29 16:29:01,836 : kivy : GL: OpenGL vendor <b'Intel'>
+2023-03-29 16:29:01,836 : kivy : GL: OpenGL renderer <b'Intel(R) HD Graphics 4600'>
+2023-03-29 16:29:01,836 : kivy : GL: OpenGL parsed version: 4, 3
+2023-03-29 16:29:01,837 : kivy : GL: Shading version <b'4.30 - Build 20.19.15.4531'>
+2023-03-29 16:29:01,837 : kivy : GL: Texture max size <16384>
+2023-03-29 16:29:01,837 : kivy : GL: Texture max units <32>
+2023-03-29 16:29:01,869 : kivy : Window: auto add sdl2 input provider
+2023-03-29 16:29:01,870 : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2023-03-29 16:29:01,887 : SoundSystem : SoundSystem: Using default 'sound_system' settings
+2023-03-29 16:29:02,397 : AudioInterface : Initialized
+2023-03-29 16:29:02,398 : AudioInterface : Loaded SDL 2.0.20
+2023-03-29 16:29:02,398 : AudioInterface : Loaded SDL_Mixer 2.0.4
+2023-03-29 16:29:02,398 : AudioInterface : Loaded GStreamer 1.18.5.0
+2023-03-29 16:29:02,398 : AudioInterface : Loaded GLib 2.62.6
+2023-03-29 16:29:02,398 : AudioInterface : Settings requested - rate: 44100, channels: 1, buffer: 2048 samples
+2023-03-29 16:29:02,398 : AudioInterface : Settings in use - rate: 44100, channels: 1, buffer: 2048 samples (4096 bytes @ 2 bytes per sample)
+2023-03-29 16:29:02,398 : SoundSystem : No audio tracks are specified in your machine config file. a track named 'default' has been created.
+2023-03-29 16:29:02,399 : SoundSystem : Setting master volume to 0.0
+2023-03-29 16:29:02,399 : SoundSystem : master_volume in sound_system is deprecated and will be removed in the future.
+2023-03-29 16:29:02,399 : AudioInterface : Enabling audio playback
+2023-03-29 16:29:02,402 : kivy : Base: Start application main loop
+2023-03-29 16:29:02,403 : EventManager : Event: ======'display_window_initialized'====== Args={}
+2023-03-29 16:29:02,470 : mpfmc : Display: Setting 'window' as default display
+2023-03-29 16:29:02,559 : mpfmc : ASPECT RATIO MISMATCH: The on-screen window is not the same aspect ratio as the display called 'window'. The logical display will be scaled from 1366x768 to the window size 800x600, and a black bar will make up the difference
+2023-03-29 16:29:02,568 : EventManager : Event: ======'displays_initialized'====== Args={}
+2023-03-29 16:29:02,579 : EventManager : Event: ======'slide_window_blank_created'====== Args={}
+2023-03-29 16:29:02,579 : EventManager : Event: ======'display_window_ready'====== Args={}
+2023-03-29 16:29:02,820 : EventManager : Event: ======'init_phase_1'====== Args={}
+2023-03-29 16:29:02,875 : EventManager : Event: ======'mc_ready'====== Args={}
+2023-03-29 16:29:02,876 : EventManager : Event: ======'init_phase_2'====== Args={}
+2023-03-29 16:29:02,881 : EventManager : Event: ======'init_phase_3'====== Args={}
+2023-03-29 16:29:02,918 : EventManager : Event: ======'init_phase_4'====== Args={}
+2023-03-29 16:29:02,919 : EventManager : Event: ======'init_phase_5'====== Args={}
+2023-03-29 16:29:03,308 : kivy : GL: NPOT texture support is available
+2023-03-29 16:29:03,342 : kivy : GL: Unpack subimage support is available
+2023-03-29 16:29:03,373 : EventManager : Event: ======'loading_assets'====== Args={'total': 1, 'loaded': 1, 'remaining': 0, 'percent': 100}
+2023-03-29 16:29:03,373 : AssetManager : Asset loading took: 0.9738340377807617
+2023-03-29 16:29:03,373 : EventManager : Event: ======'asset_loading_complete'====== Args={}
+2023-03-29 16:29:03,374 : AssetManager : Loading assets: 1/1 (100%)
+2023-03-29 16:29:03,374 : EventManager : Event: ======'init_done'====== Args={}
+2023-03-29 16:29:03,375 : MPF-MC BCP Server : Starting up on localhost port 5050
+2023-03-29 16:29:03,387 : MPF-MC BCP Server : Waiting for a connection...
+2023-03-29 16:29:03,388 : mpfmc : SlidePlayer: Play called with settings={'slides': {welcome_slide-None-None: {'priority': None, 'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play', 'transition': None, 'transition_out': None}}}
+2023-03-29 16:29:03,395 : EventManager : Event: ======'slide_welcome_slide_created'====== Args={}
+2023-03-29 16:29:03,397 : EventManager : Event: ======'slide_welcome_slide_active'====== Args={}
+2023-03-29 16:29:03,408 : EventManager : Event: ======'client_disconnected'====== Args={'host': '127.0.0.1', 'port': 5050}
+2023-03-29 16:29:05,711 : kivy : Base: Leaving application in progress...
+2023-03-29 16:29:06,023 : mpfmc : Stopping...
+2023-03-29 16:29:06,023 : EventManager : Event: ======'shutdown'====== Args={}
+2023-03-29 16:29:06,024 : AudioInterface : Disabling audio playback
+2023-03-29 16:29:06,024 : mpfmc : Loop rate 52.18 Hz
+2023-03-29 16:29:06,024 : kivy : MC run loop ended.
+2023-03-29 16:29:06,025 : kivy : Stopping child threads... (3 remaining)
+2023-03-29 16:29:06,387 : MPF-MC BCP Server : Stopping BCP sending thread
+2023-03-29 16:29:06,448 : MPF-MC BCP Server : Stopping BCP listener thread
+2023-03-29 16:29:07,251 : kivy : All child threads stopped.
