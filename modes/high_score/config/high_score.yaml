@@ -17,10 +17,10 @@ high_score:
       - High Score 1
       - High Score 2
 
-# This tells MPF how to handle the "Name Entry" screen
-high_score_settings:
-  enter_initials_timeout: 30s
-  chars: ABCDEFGHIJKLMNOPQRSTUVWXYZ. 
-  shift_left_tag: left_flipper
-  shift_right_tag: right_flipper
-  select_tag: start
+  # This tells MPF how to handle the "Name Entry" screen
+  settings:  # Some versions use 'settings' inside 'high_score'
+    chars: ABCDEFGHIJKLMNOPQRSTUVWXYZ.- 
+    shift_left_tag: left_flipper
+    shift_right_tag: right_flipper
+    select_tag: start
+    enter_initials_timeout: 30s
