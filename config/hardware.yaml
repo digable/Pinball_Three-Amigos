@@ -43,7 +43,7 @@ images:
   Amigos_billboard:
     file: Billboard.png
 
-text_styles:
+widget_styles:
   flashing_text:
     font_size: 50
     color: red
