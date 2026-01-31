@@ -22,5 +22,5 @@ variable_player:
     score: 5
   s_drop_target_right_active:
     score: 5
-  dt_bank_dt_bank_complete:
+  drop_target_bank_dt_bank_complete:
     score: 50
