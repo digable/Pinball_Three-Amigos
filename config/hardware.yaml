@@ -61,6 +61,11 @@ widgets:
     style: flashing_text
     y: 20%
     z: 100
+  p_score_template:
+    type: text
+    text: (score)
+    font_size: 40
+    # We will set the position dynamically in the player below
 
 widget_player:
   mode_attract_started:
@@ -69,6 +74,26 @@ widget_player:
   mode_attract_stopped:
     free_play_widget:
       action: remove
+  player_added{number==1}:
+    p_score_template:
+      widget_settings:
+        x: 15%
+        y: 15%
+  player_added{number==2}:
+    p_score_template:
+      widget_settings:
+        x: 85%
+        y: 15%
+  player_added{number==3}:
+    p_score_template:
+      widget_settings:
+        x: 15%
+        y: 85%
+  player_added{number==4}:
+    p_score_template:
+      widget_settings:
+        x: 85%
+        y: 85%
 
 slides:
   welcome_slide:
@@ -88,38 +113,6 @@ slides:
         text: PLAYER (number) BALL (ball)
         y: 85%
         font_size: 40
-
-      # --- PLAYER 1 (Bottom Left) ---
-      - type: text
-        text: (players[0].score)
-        x: 15%
-        y: 15%
-        font_size: 40
-        number_grouping: true
-
-      # --- PLAYER 2 (Bottom Right) ---
-      - type: text
-        text: (players[0].score)
-        x: 85%
-        y: 15%
-        font_size: 40
-        number_grouping: true
-
-      # --- PLAYER 3 (Top Left) ---
-      - type: text
-        text: (players[0].score)
-        x: 15%
-        y: 85%
-        font_size: 40
-        number_grouping: true
-
-      # --- PLAYER 4 (Top Right) ---
-      - type: text
-        text: (players[0].score)
-        x: 85%
-        y: 85%
-        font_size: 40
-        number_grouping: true
 
 slide_player:
   init_done: welcome_slide
