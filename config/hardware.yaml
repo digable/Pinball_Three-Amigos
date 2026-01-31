@@ -60,7 +60,15 @@ widgets:
     text: FREE PLAY / PRESS START
     style: flashing_text
     y: 20%
-    z: 100  # The Z-order stays here!
+    z: 100
+
+widget_player:
+  mode_attract_started:
+    free_play_widget:
+      target: window
+  mode_attract_stopped:
+    free_play_widget:
+      action: remove
 
 slides:
   welcome_slide:
@@ -95,17 +103,15 @@ slides:
 
 slide_player:
   init_done: welcome_slide
-  mode_attract_started: attract_base_slide  # Shows the base slide once
-  ball_started:
-    widgets_ball_started:
-      priority: 100
+  mode_attract_started: 
+    attract_base_slide:
+      priority: 10  # This puts the "background" below the gameplay priority
 
 show_player:
   mode_attract_started:
     attract_loop:
       loops: -1
-      priority: 10  # Lower than the overlay
-  mode_attract_stopped:
+  mode_attract_stopped:  # Add this block
     attract_loop:
       action: stop
 
