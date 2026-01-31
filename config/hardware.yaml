@@ -62,37 +62,43 @@ widgets:
     y: 20%
     z: 100  # The Z-order stays here!
 
-widget_player:
-  mode_attract_started:
-    free_play_widget:
-      target: window
-  mode_attract_stopped:
-    free_play_widget:
-      action: remove
-
 slides:
-    welcome_slide:
-        widgets:
-              - type: image
-                image: ZukiDogLogo
-    widgets_ball_started:
-        widgets:
-              - type: text
-                text: PLAYER (number) BALL (ball)
-                y: 80%
-                font_size: 40
-              - type: text
-                text: (score)
-                y: 50%
-                font_size: 100
-                number_grouping: true
-                color: yellow
+  welcome_slide:
+    widgets:
+      - type: image
+        image: ZukiDogLogo
+  
+  # This is our new "Master" attract slide
+  attract_base_slide:
+    widgets:
+      - type: image
+        image: ZukiDogLogo
+        id: attract_image_widget # The show will "target" this ID
+      - type: text
+        text: FREE PLAY / PRESS START
+        style: flashing_text
+        y: 20%
+        z: 100
+
+  widgets_ball_started:
+    widgets:
+      - type: text
+        text: PLAYER (number) BALL (ball)
+        y: 80%
+        font_size: 40
+      - type: text
+        text: (score)
+        y: 50%
+        font_size: 100
+        number_grouping: true
+        color: yellow
 
 slide_player:
   init_done: welcome_slide
+  mode_attract_started: attract_base_slide  # Shows the base slide once
   ball_started:
     widgets_ball_started:
-      priority: 100  # Keeping this high for gameplay
+      priority: 100
 
 show_player:
   mode_attract_started:
