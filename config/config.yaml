@@ -16,3 +16,8 @@ modes:
 config:
 - hardware.yaml
 - keyboard.yaml
+
+# This ensures the game knows where to look for your Western assets
+paths:
+  fonts: fonts
+  images: images
