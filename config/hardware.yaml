@@ -91,15 +91,15 @@ slides:
 
 slide_player:
   init_done: welcome_slide
-  mode_attract_started: 
-    attract_base_slide:
-      priority: 10  # This puts the "background" below the gameplay priority
+  # We removed mode_attract_started from here because the show_player 
+  # handles the background slides and the widget_player handles the text.
+  ball_started: widgets_ball_started
 
 show_player:
   mode_attract_started:
     attract_loop:
       loops: -1
-  mode_attract_stopped:  # Add this block
+  mode_attract_stopped:
     attract_loop:
       action: stop
 
