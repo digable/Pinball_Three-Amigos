@@ -91,7 +91,7 @@ slides:
 
       # --- PLAYER 1 (Bottom Left) ---
       - type: text
-        text: "P1: %player1_score%"
+        text: machine.players[0].score
         x: 15%
         y: 15%
         font_size: 40
@@ -99,7 +99,7 @@ slides:
 
       # --- PLAYER 2 (Bottom Right) ---
       - type: text
-        text: "P1: %player1_score%"
+        text: machine.players[0].score
         x: 85%
         y: 15%
         font_size: 40
@@ -107,7 +107,7 @@ slides:
 
       # --- PLAYER 3 (Top Left) ---
       - type: text
-        text: "P1: %player1_score%"
+        text: machine.players[0].score
         x: 15%
         y: 85%
         font_size: 40
@@ -115,7 +115,7 @@ slides:
 
       # --- PLAYER 4 (Top Right) ---
       - type: text
-        text: "P1: %player1_score%"
+        text: machine.players[0].score
         x: 85%
         y: 85%
         font_size: 40
