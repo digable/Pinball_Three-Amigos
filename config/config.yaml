@@ -9,6 +9,9 @@ p_roc:
   use_watchdog: true
   watchdog_time: 1s
 
+modes:
+  - high_score
+
 config:
 - hardware.yaml
 - keyboard.yaml
