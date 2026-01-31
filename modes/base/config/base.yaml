@@ -25,6 +25,10 @@ variable_player:
     score: 5
   drop_target_bank_dt_bank_complete:
     score: 50
+  drop_target_bank_dt_bank_down:
+    score: 50
+  drop_target_bank_dt_bank_all_down:
+    score: 50
 
 slides:
   bank_cleared_slide:
