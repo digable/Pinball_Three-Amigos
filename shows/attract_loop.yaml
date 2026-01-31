@@ -1,61 +1,51 @@
 #show_version=5
 - time: 0
-  slides:
-    attract_slide:
-      widgets:
-        - type: image
-          image: ZukiDogLogo
+  widgets:
+    - type: image
+      image: ZukiDogLogo
+      id: attract_image_widget
 - time: 5s
-  slides:
-    attract_slide:
-      widgets:
-        - type: image
-          image: MPF_logo
+  widgets:
+    - type: image
+      image: MPF_logo
+      id: attract_image_widget
 - time: 10s
-  slides:
-    attract_slide:
-      widgets:
-        - type: image
-          image: Multimorphic_logo
+  widgets:
+    - type: image
+      image: Multimorphic_logo
+      id: attract_image_widget
 - time: 15s
-  slides:
-    attract_slide:
-      widgets:
-        - type: image
-          image: PinballLife_logo
+  widgets:
+    - type: image
+      image: PinballLife_logo
+      id: attract_image_widget
 - time: 20s
-  slides:
-    attract_slide:
-      widgets:
-        - type: image
-          image: Amigos_dogs
+  widgets:
+    - type: image
+      image: Amigos_dogs
+      id: attract_image_widget
 - time: 25s
-  slides:
-    attract_slide:
-      widgets:
-        - type: image
-          image: Amigos_lions
+  widgets:
+    - type: image
+      image: Amigos_lions
+      id: attract_image_widget
 - time: 30s
-  slides:
-    attract_slide:
-      widgets:
-        - type: image
-          image: Amigos_dusty
+  widgets:
+    - type: image
+      image: Amigos_dusty
+      id: attract_image_widget
 - time: 35s
-  slides:
-    attract_slide:
-      widgets:
-        - type: image
-          image: Amigos_lucky
+  widgets:
+    - type: image
+      image: Amigos_lucky
+      id: attract_image_widget
 - time: 40s
-  slides:
-    attract_slide:
-      widgets:
-        - type: image
-          image: Amigos_ned
+  widgets:
+    - type: image
+      image: Amigos_ned
+      id: attract_image_widget
 - time: 45s
-  slides:
-    attract_slide:
-      widgets:
-        - type: image
-          image: Amigos_billboard
+  widgets:
+    - type: image
+      image: Amigos_billboard
+      id: attract_image_widget
