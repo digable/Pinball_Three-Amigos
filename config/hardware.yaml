@@ -112,6 +112,7 @@ slides:
     widgets:
       # --- MAIN CENTER DISPLAY (Current Player) ---
       - type: text
+        background_color: 00000000
         text: (score)
         y: 60%
         font_size: 120
