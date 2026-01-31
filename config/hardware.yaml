@@ -4,17 +4,17 @@ game:
     max_players: 4
 
 machine:
-  balls_installed: 4
+    balls_installed: 4
 
 window:
-  width: 1366
-  height: 768
-  title: Amigos
-  resizable: false
-  fullscreen: false
-  borderless: false
-  exit_on_escape: true
-  source_display: window
+    width: 1366
+    height: 768
+    title: Amigos
+    resizable: false
+    fullscreen: false
+    borderless: false
+    exit_on_escape: true
+    source_display: window
 
 displays:
     window:
@@ -24,22 +24,173 @@ displays:
 slides:
     welcome_slide:
         widgets:
-              - type: image
-                image: ZukiDogLogo
+            - type: image
+              image: ZukiDogLogo
     attract_started:
         widgets:
-              - type: text
-                text: Attract Mode!!!!!
+            - type: text
+              text: Attract Mode!!!!!
+    game_over_slide:
+        widgets:
+            - type: text
+              text: GAME OVER
+              font_size: 100
+              color: red
+            - type: text
+              text: THANKS FOR PLAYING!
+              y: 30%
+              font_size: 40
+    leaderboard_slide:
+        widgets:
+            - type: text
+              text: ALL-TIME CHAMPIONS
+              y: 85%
+              font_size: 50
+              color: yellow
+            - type: text
+              text: "GC: (high_score1_name) - (high_score1_value)"
+              y: 60%
+              font_size: 40
+            - type: text
+              text: "HS1: (high_score2_name) - (high_score2_value)"
+              y: 45%
+              font_size: 30
+            - type: text
+              text: "HS2: (high_score3_name) - (high_score3_value)"
+              y: 30%
+              font_size: 30
+
+    high_score_enter_initials:
+        widgets:
+            - type: text
+              text: NEW HIGH SCORE!
+              y: 80%
+            - type: text
+              text: (player_name)
+              y: 50%
+              font_size: 80
+              color: yellow
+            - type: text
+              text: ENTER INITIALS
+              y: 20%
+
     widgets_ball_started:
         widgets:
-              - type: text
-                text: PLAYER (number) BALL (ball)
+            # --- Header: Current Ball ---
+            - type: text
+              text: BALL (ball)
+              y: 90%
+              font_size: 50
+              color: white
+
+            # --- PLAYER 1 ---
+            - type: text
+              text: "P1: (player1|score)"
+              number_grouping: true
+              x: 20%
+              y: 50%
+              font_size: 60
+              color: yellow   # ACTIVE PLAYER
+              condition: player_num == 1
+            - type: text
+              text: "P1: (player1|score)"
+              number_grouping: true
+              x: 20%
+              y: 50%
+              font_size: 25
+              color: white    # WAITING PLAYER
+              condition: player_num != 1 and num_players >= 1
+
+            # --- PLAYER 2 ---
+            - type: text
+              text: "P2: (player2|score)"
+              number_grouping: true
+              x: 40%
+              y: 50%
+              font_size: 60
+              color: yellow   # ACTIVE PLAYER
+              condition: player_num == 2
+            - type: text
+              text: "P2: (player2|score)"
+              number_grouping: true
+              x: 40%
+              y: 50%
+              font_size: 25
+              color: white    # WAITING PLAYER
+              condition: player_num != 2 and num_players >= 2
+
+            # --- PLAYER 3 ---
+            - type: text
+              text: "P3: (player3|score)"
+              number_grouping: true
+              x: 60%
+              y: 50%
+              font_size: 60
+              color: yellow   # ACTIVE PLAYER
+              condition: player_num == 3
+            - type: text
+              text: "P3: (player3|score)"
+              number_grouping: true
+              x: 60%
+              y: 50%
+              font_size: 25
+              color: white    # WAITING PLAYER
+              condition: player_num != 3 and num_players >= 3
+
+            # --- PLAYER 4 ---
+            - type: text
+              text: "P4: (player4|score)"
+              number_grouping: true
+              x: 80%
+              y: 50%
+              font_size: 60
+              color: yellow   # ACTIVE PLAYER
+              condition: player_num == 4
+            - type: text
+              text: "P4: (player4|score)"
+              number_grouping: true
+              x: 80%
+              y: 50%
+              font_size: 25
+              color: white    # WAITING PLAYER
+              condition: player_num != 4 and num_players >= 4
+
+show_player:
+      mode_attract_started:
+          attract_cycle:
+              loops: -1
+
+high_score:
+      award_names:
+          - Grand Champion
+          - High Score 1
+          - High Score 2
+      categories:
+          score:
+              - Grand Champion
+              - High Score 1
+              - High Score 2
+
+      defaults:
+          score:
+              Grand Champion: 1000
+              High Score 1: 500
+              High Score 2: 250
 
 slide_player:
     init_done: welcome_slide
     mode_attract_started: attract_started
     ball_started: widgets_ball_started
+    game_ended: game_over_slide  # Triggers when the last ball drains
 
+shows:
+    attract_cycle:
+         - time: 0
+           slides: attract_started  # Your "Attract Mode!!!!" slide
+         - time: 4s
+           slides: leaderboard_slide
+         - time: 9s  # The show will loop back to time 0 after 9 seconds total
+          
 switches:
     s_left_flipper:
         number: A1-B0-1
@@ -84,6 +235,16 @@ switches:
     s_tilt:
         number: A1-B0-4
         tags: tilt_warning
+    s_spinner:
+        number: A2-B0-1
+    s_L_circle:
+        number: A2-B0-2
+    s_C_CaptiveStanding:
+        number: A2-B0-3
+    s_L_RightRamp:
+        number: A2-B0-4
+    s_R_RightRamp:
+        number: A2-B0-5
 
 timed_switches:
     plunger_lane_check:
@@ -190,8 +351,27 @@ drop_target_banks:
         reset_coils: c_drop_target_reset
         reset_on_complete: 1s
         reset_events:
-#          ball_started.1: 0
-#          ball_started.2: 1s
-#          ball_started.3: 2s
-#          machine_reset_phase_3: 0
-          player_turn_started: 1s
+            player_turn_started: 1s
+
+# --- Scoring Logic ---
+variable_player:
+    s_spinner_active:
+        score: 5
+    s_L_circle_active:
+        score: 50
+    s_C_CaptiveStanding_active:
+        score: 10
+    s_L_RightRamp_active:
+        score: 10
+    s_R_RightRamp_active:
+        score: 10
+    # Drop target individual scoring
+    s_drop_target_left_active:
+        score: 5
+    s_drop_target_middle_active:
+        score: 5
+    s_drop_target_right_active:
+        score: 5
+    # Drop target bank completion bonus (Triggered by the bank name)
+    dt_bank_dt_bank_complete:
+        score: 50
