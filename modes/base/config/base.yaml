@@ -1,5 +1,4 @@
 #config_version=5
-
 mode:
   start_events: ball_starting
   stop_events: game_ended
@@ -26,3 +25,23 @@ variable_player:
     score: 5
   drop_target_bank_dt_bank_complete:
     score: 50
+
+slides:
+  bank_cleared_slide:
+    widgets:
+      - type: text
+        text: BANK CLEARED!
+        font_size: 80
+        color: green
+        style: bold
+      - type: text
+        text: +50 POINTS
+        y: 35%
+        font_size: 40
+        color: white
+
+slide_player:
+  drop_target_bank_dt_bank_complete:
+    bank_cleared_slide:
+      expire: 2s         # Slide disappears after 2 seconds
+      priority: 500      # Higher priority than the score slide so it shows on top
