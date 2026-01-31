@@ -96,6 +96,7 @@ slides:
         y: 15%
         font_size: 40
         number_grouping: true
+        dynamic_x: true
 
       # --- PLAYER 2 (Bottom Right) ---
       - type: text
@@ -104,6 +105,7 @@ slides:
         y: 15%
         font_size: 40
         number_grouping: true
+        dynamic_x: true
 
       # --- PLAYER 3 (Top Left) ---
       - type: text
@@ -112,6 +114,7 @@ slides:
         y: 85%
         font_size: 40
         number_grouping: true
+        dynamic_x: true
 
       # --- PLAYER 4 (Top Right) ---
       - type: text
@@ -120,6 +123,7 @@ slides:
         y: 85%
         font_size: 40
         number_grouping: true
+        dynamic_x: true
 
 slide_player:
   init_done: welcome_slide
