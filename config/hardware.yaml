@@ -76,21 +76,29 @@ widget_player:
       action: remove
   player_added{number==1}:
     p_score_template:
+      target: window      # Put it on the top-most layer
+      priority: 100       # Make sure it's higher than the slide
       widget_settings:
         x: 15%
         y: 15%
   player_added{number==2}:
     p_score_template:
+      target: window      # Put it on the top-most layer
+      priority: 100       # Make sure it's higher than the slide
       widget_settings:
         x: 85%
         y: 15%
   player_added{number==3}:
     p_score_template:
+      target: window      # Put it on the top-most layer
+      priority: 100       # Make sure it's higher than the slide
       widget_settings:
         x: 15%
         y: 85%
   player_added{number==4}:
     p_score_template:
+      target: window      # Put it on the top-most layer
+      priority: 100       # Make sure it's higher than the slide
       widget_settings:
         x: 85%
         y: 85%
