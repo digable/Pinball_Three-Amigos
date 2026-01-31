@@ -91,39 +91,35 @@ slides:
 
       # --- PLAYER 1 (Bottom Left) ---
       - type: text
-        text: (player1_score)
+        text: "P1: %player1_score%"
         x: 15%
         y: 15%
         font_size: 40
         number_grouping: true
-        dynamic_x: true
 
       # --- PLAYER 2 (Bottom Right) ---
       - type: text
-        text: (player2_score)
+        text: "P1: %player1_score%"
         x: 85%
         y: 15%
         font_size: 40
         number_grouping: true
-        dynamic_x: true
 
       # --- PLAYER 3 (Top Left) ---
       - type: text
-        text: (player3_score)
+        text: "P1: %player1_score%"
         x: 15%
         y: 85%
         font_size: 40
         number_grouping: true
-        dynamic_x: true
 
       # --- PLAYER 4 (Top Right) ---
       - type: text
-        text: (player4_score)
+        text: "P1: %player1_score%"
         x: 85%
         y: 85%
         font_size: 40
         number_grouping: true
-        dynamic_x: true
 
 slide_player:
   init_done: welcome_slide
