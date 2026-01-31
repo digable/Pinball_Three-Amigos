@@ -77,36 +77,49 @@ slides:
         image: ZukiDogLogo
   widgets_ball_started:
     widgets:
-      # --- BIG MAIN SCORE ---
+      # --- MAIN CENTER DISPLAY (Current Player) ---
       - type: text
         text: (score)
         y: 60%
         font_size: 120
         color: yellow
         number_grouping: true
-
-      # --- PLAYER 1 ---
       - type: text
-        text: "P1: (player1_score)"
+        text: PLAYER (number) BALL (ball)
+        y: 85%
+        font_size: 40
+
+      # --- PLAYER 1 (Bottom Left) ---
+      - type: text
+        text: (player1_score)
         x: 15%
         y: 15%
-        font_size: 30
+        font_size: 40
+        number_grouping: true
 
-      # --- PLAYER 2 ---
-      # This widget only shows the score if it exists
+      # --- PLAYER 2 (Bottom Right) ---
       - type: text
-        text: "P2: (player2_score)"
+        text: (player2_score)
         x: 85%
         y: 15%
-        font_size: 30
-      # This widget is a static label that acts as a "background" 
-      # It will be covered or look like part of the score
+        font_size: 40
+        number_grouping: true
+
+      # --- PLAYER 3 (Top Left) ---
       - type: text
-        text: "P2: JOIN IN"
+        text: (player3_score)
+        x: 15%
+        y: 85%
+        font_size: 40
+        number_grouping: true
+
+      # --- PLAYER 4 (Top Right) ---
+      - type: text
+        text: (player4_score)
         x: 85%
-        y: 15%
-        font_size: 30
-        z: -1  # Sits behind the actual score
+        y: 85%
+        font_size: 40
+        number_grouping: true
 
 slide_player:
   init_done: welcome_slide
