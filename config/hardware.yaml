@@ -73,7 +73,7 @@ slides:
     widgets:
       - type: image
         image: ZukiDogLogo
-        id: attract_image_widget # The show will "target" this ID
+        id: attract_image_widget  # This ID is the "Anchor"
       - type: text
         text: FREE PLAY / PRESS START
         style: flashing_text
