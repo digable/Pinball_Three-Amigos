@@ -21,19 +21,19 @@ slides:
         y: 85%
         font_size: 100        # Much larger
         color: red
-        font_name: amigos_font
+        #font_name: amigos_font
       - type: text
         text: (award)
         y: 65%
         font_size: 60
         color: white
-        font_name: amigos_font
+       # font_name: amigos_font
       - type: text
         text: (player_name)
         y: 40%
         font_size: 250        # Massive initials for that hero moment
         color: yellow
-        font_name: amigos_font
+       # font_name: amigos_font
       - type: text
         text: "USE FLIPPERS TO SELECT - START TO ENTER"
         y: 10%
