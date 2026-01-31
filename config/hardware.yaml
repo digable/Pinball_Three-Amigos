@@ -121,6 +121,22 @@ slides:
         text: PLAYER (number) BALL (ball)
         y: 85%
         font_size: 40
+  high_score_enter_initials:
+    widgets:
+      - type: text
+        text: NEW HIGH SCORE!
+        y: 80%
+        font_size: 50
+      - type: text
+        text: (award)
+        y: 60%
+        font_size: 40
+        color: yellow
+      - type: text
+        text: (player_name)
+        y: 40%
+        font_size: 100
+        # The (player_name) placeholder shows the letters as they scroll
 
 slide_player:
   init_done: welcome_slide
