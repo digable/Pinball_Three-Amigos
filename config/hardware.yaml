@@ -89,15 +89,31 @@ slides:
                 font_size: 100
                 number_grouping: true
                 color: yellow
+    free_play_overlay:
+        widgets:
+              - type: text
+                text: FREE PLAY / PRESS START
+                style: flashing_text
+                y: 20%
 
 slide_player:
-    init_done: welcome_slide
-    ball_started: widgets_ball_started
+  init_done: welcome_slide
+  ball_started:
+    widgets_ball_started:
+      priority: 100  # Keeping this high for gameplay
+  mode_attract_started:
+    free_play_overlay:  # Indented under the event!
+      target: window
+      priority: 50
+  mode_attract_stopped:
+    free_play_overlay:
+      action: remove
       
 show_player:
   mode_attract_started:
     attract_loop:
-      loops: -1  # This makes it loop forever
+      loops: -1
+      priority: 10  # Lower than the overlay
   mode_attract_stopped:
     attract_loop:
       action: stop
