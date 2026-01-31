@@ -335,26 +335,3 @@ drop_target_banks:
         reset_on_complete: 1s
         reset_events:
             player_turn_started: 1s
-
-# --- Scoring Logic ---
-variable_player:
-    s_spinner_active:
-        score: 5
-    s_L_circle_active:
-        score: 50
-    s_C_CaptiveStanding_active:
-        score: 10
-    s_L_RightRamp_active:
-        score: 10
-    s_R_RightRamp_active:
-        score: 10
-    # Drop target individual scoring
-    s_drop_target_left_active:
-        score: 5
-    s_drop_target_middle_active:
-        score: 5
-    s_drop_target_right_active:
-        score: 5
-    # Drop target bank completion bonus (Triggered by the bank name)
-    dt_bank_dt_bank_complete:
-        score: 50
