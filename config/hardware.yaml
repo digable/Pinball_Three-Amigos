@@ -85,6 +85,9 @@ show_player:
   mode_attract_started:
     attract_loop:
       loops: -1  # This makes it loop forever
+  mode_attract_stopped:
+    attract_loop:
+      action: stop
 
 switches:
     s_left_flipper:
