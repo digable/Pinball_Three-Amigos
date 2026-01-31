@@ -59,16 +59,18 @@ widgets:
     - type: text
       text: FREE PLAY / PRESS START
       style: flashing_text
-      y: 10%
+      y: 20%
       z: 100  # This keeps it on top of the images
 
 widget_player:
   mode_attract_started:
     free_play_widget:
       target: window
+      key: persistent_free_play  # Giving it a key locks it in
   mode_attract_stopped:
     free_play_widget:
       action: remove
+      key: persistent_free_play
 
 slides:
     welcome_slide:
