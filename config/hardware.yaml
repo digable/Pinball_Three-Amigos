@@ -207,5 +207,6 @@ drop_target_banks:
         drop_targets: dt_1_left, dt_2_middle, dt_3_right
         reset_coils: c_drop_target_reset
         reset_on_complete: 1s
+        active_switch_state: inactive
         reset_events:
             player_turn_started: 1s
