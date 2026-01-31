@@ -1,17 +1,24 @@
-#config_version=5
+mode:
+  priority: 500  # Higher than your game slides so it shows up on top
+  start_events: game_ending
+  stop_events: high_score_enter_initials_completed
 
 high_score:
   award_names:
     - Grand Champion
     - High Score 1
     - High Score 2
+  # This saves the scores to a file so they persist after reboot
   categories:
     score:
       - Grand Champion
       - High Score 1
       - High Score 2
-  defaults:
-    score:
-      Grand Champion: 1000
-      High Score 1: 500
-      High Score 2: 250
+
+# This tells MPF how to handle the "Name Entry" screen
+high_score_settings:
+  enter_initials_timeout: 30s
+  chars: ABCDEFGHIJKLMNOPQRSTUVWXYZ. 
+  shift_left_tag: left_flipper
+  shift_right_tag: right_flipper
+  select_tag: start
