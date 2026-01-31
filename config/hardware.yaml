@@ -56,17 +56,16 @@ widget_styles:
 
 widgets:
   free_play_widget:
-      type: text
-      text: FREE PLAY / PRESS START
-      style: flashing_text
-      y: 20%
-      z: 100  # This keeps it on top of the images
+    type: text
+    text: FREE PLAY / PRESS START
+    style: flashing_text
+    y: 20%
+    z: 100  # The Z-order stays here!
 
 widget_player:
   mode_attract_started:
     free_play_widget:
       target: window
-      z: 100            # Z-order puts it on top of all slides
   mode_attract_stopped:
     free_play_widget:
       action: remove
