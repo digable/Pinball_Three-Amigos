@@ -1,12 +1,11 @@
 #config_version=5
 
 keyboard:
-    a:
-        switch: s_left_flipper
-    z:
-        switch: s_right_flipper
+    # --- System & Trough ---
     s:
         switch: s_start
+    b:
+        switch: s_tilt
     p:
         switch: s_plunger_lane
     1:
@@ -19,15 +18,37 @@ keyboard:
         switch: s_trough4
     5:
         switch: s_trough_jam
+
+    # --- Flippers ---
+    a:
+        switch: s_left_flipper
+    z:
+        switch: s_right_flipper
+
+    # --- Slings & Jets ---
     9:
         switch: s_left_slingshot
     0:
         switch: s_right_slingshot
+    j:
+        switch: s_right_jet
+
+    # --- Drop Targets ---
     x:
         switch: s_drop_target_left
     c:
         switch: s_drop_target_middle
     v:
         switch: s_drop_target_right
-    b:
-        switch: s_tilt
+
+    # --- NEW PLAYFIELD SWITCHES ---
+    n:
+        switch: s_spinner
+    m:
+        switch: s_L_circle
+    k:
+        switch: s_C_CaptiveStanding
+    l:
+        switch: s_L_RightRamp
+    o:
+        switch: s_R_RightRamp
