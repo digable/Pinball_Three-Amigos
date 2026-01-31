@@ -56,7 +56,7 @@ widget_styles:
 
 widgets:
   free_play_widget:
-    - type: text
+      type: text
       text: FREE PLAY / PRESS START
       style: flashing_text
       y: 20%
@@ -94,7 +94,7 @@ slide_player:
   ball_started:
     widgets_ball_started:
       priority: 100  # Keeping this high for gameplay
-      
+
 show_player:
   mode_attract_started:
     attract_loop:
