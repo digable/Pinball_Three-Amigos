@@ -21,6 +21,39 @@ displays:
         width: 1366
         height: 768
 
+images:
+  ZukiDogLogo:
+    file: ZukiDogLogo.png
+  MPF_logo:
+    file: MPF_logo.png
+  Multimorphic_logo:
+    file: Multimorphic.png
+  PinballLife_logo:
+    file: PinballLifeLogo.png
+  Amigos_dogs:
+    file: DieLikeDogs.png
+  Amigos_lions:
+    file: FightLikeLions.png
+  Amigos_dusty:
+    file: DustyBottoms.png
+  Amigos_lucky:
+    file: LuckyDay.png
+  Amigos_ned:
+    file: NedNederlander.png
+  Amigos_billboard:
+    file: Billboard.png
+
+text_styles:
+  flashing_text:
+    font_size: 50
+    color: red
+    effects:
+      - type: text_appearance
+        duration: 0.5s
+      - type: text_disappearance
+        duration: 0.5s
+        start_time: 0.5s
+
 slides:
     welcome_slide:
         widgets:
@@ -47,7 +80,13 @@ slide_player:
     init_done: welcome_slide
     mode_attract_started: attract_started
     ball_started: widgets_ball_started
-          
+      
+show_player:
+  mode_attract_started:
+    attract_loop:
+      events_when_stop: mode_attract_stopped
+      loops: -1  # This makes it loop forever
+
 switches:
     s_left_flipper:
         number: A1-B0-1
