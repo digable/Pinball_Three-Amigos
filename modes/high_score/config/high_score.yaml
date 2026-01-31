@@ -6,7 +6,8 @@ mode:
   stop_events: high_score_enter_initials_completed
   use_wait_queue: true
 
-high_score_enter_initials:
+slides:
+  high_score_enter_initials:
     widgets:
       - type: image
         image: Amigos_billboard  # Using the image you already defined
@@ -15,13 +16,8 @@ high_score_enter_initials:
         y: 80%
         font_size: 90
         color: yellow
-        # ... rest of the text widgets follow
-
-slides:
-  high_score_enter_initials:
-    widgets:
       - type: text
-        text: "¡SANTO POCO!"  # Added some Amigos flavor
+        text: "SANTO POCO"  # Added some Amigos flavor
         y: 85%
         font_size: 100        # Much larger
         color: red
