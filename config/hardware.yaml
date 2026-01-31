@@ -75,18 +75,6 @@ slides:
     widgets:
       - type: image
         image: ZukiDogLogo
-  
-  # This is our new "Master" attract slide
-  attract_base_slide:
-    widgets:
-      - type: image
-        image: ZukiDogLogo
-        id: attract_image_widget  # This ID is the "Anchor"
-      - type: text
-        text: FREE PLAY / PRESS START
-        style: flashing_text
-        y: 20%
-        z: 100
 
   widgets_ball_started:
     widgets:
