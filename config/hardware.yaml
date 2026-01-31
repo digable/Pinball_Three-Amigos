@@ -75,19 +75,55 @@ slides:
     widgets:
       - type: image
         image: ZukiDogLogo
-
   widgets_ball_started:
     widgets:
+      # --- BIG MAIN SCORE (Current Player) ---
       - type: text
-        text: PLAYER (number) BALL (ball)
-        y: 80%
-        font_size: 40
-      - type: text
-        text: (score)
-        y: 50%
-        font_size: 100
-        number_grouping: true
+        text: "(score)"
+        y: 60%
+        font_size: 120
         color: yellow
+        number_grouping: true
+      - type: text
+        text: "PLAYER (number) BALL (ball)"
+        y: 85%
+        font_size: 40
+
+      # --- PLAYER 1 SMALL (Bottom Left) ---
+      - type: text
+        text: "P1: (player1_score)"
+        x: 10%
+        y: 10%
+        font_size: 30
+        visible: "(machine.player1)"
+        number_grouping: true
+
+      # --- PLAYER 2 SMALL (Bottom Right) ---
+      - type: text
+        text: "P2: (player2_score)"
+        x: 90%
+        y: 10%
+        font_size: 30
+        visible: "(machine.player2)"
+        number_grouping: true
+
+      # --- PLAYER 3 SMALL (Top Left) ---
+      - type: text
+        text: "P3: (player3_score)"
+        x: 10%
+        y: 90%
+        font_size: 30
+        visible: "(machine.player3)"
+        number_grouping: true
+
+      # --- PLAYER 4 SMALL (Top Right) ---
+      - type: text
+        text: "P4: (player4_score)"
+        x: 90%
+        y: 90%
+        font_size: 30
+        visible: "(machine.player4)"
+        number_grouping: true
 
 slide_player:
   init_done: welcome_slide
