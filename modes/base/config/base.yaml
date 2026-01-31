@@ -1,0 +1,26 @@
+#config_version=5
+
+mode:
+  start_events: ball_starting
+  stop_events: game_ended
+  priority: 100
+
+variable_player:
+  s_spinner_active:
+    score: 5
+  s_L_circle_active:
+    score: 50
+  s_C_CaptiveStanding_active:
+    score: 10
+  s_L_RightRamp_active:
+    score: 10
+  s_R_RightRamp_active:
+    score: 10
+  s_drop_target_left_active:
+    score: 5
+  s_drop_target_middle_active:
+    score: 5
+  s_drop_target_right_active:
+    score: 5
+  dt_bank_dt_bank_complete:
+    score: 50
