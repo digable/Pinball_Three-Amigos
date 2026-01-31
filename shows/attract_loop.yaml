@@ -1,51 +1,71 @@
 #show_version=5
-- time: 0
+- time: 0.1s
   widgets:
     - type: image
       image: ZukiDogLogo
       id: attract_image_widget
+      action: update
+      key: attract_base_slide
 - time: 5s
   widgets:
     - type: image
       image: MPF_logo
       id: attract_image_widget
+      action: update
+      key: attract_base_slide
 - time: 10s
   widgets:
     - type: image
       image: Multimorphic_logo
       id: attract_image_widget
+      action: update
+      key: attract_base_slide
 - time: 15s
   widgets:
     - type: image
       image: PinballLife_logo
       id: attract_image_widget
+      action: update
+      key: attract_base_slide
 - time: 20s
   widgets:
     - type: image
       image: Amigos_dogs
       id: attract_image_widget
+      action: update
+      key: attract_base_slide
 - time: 25s
   widgets:
     - type: image
       image: Amigos_lions
       id: attract_image_widget
+      action: update
+      key: attract_base_slide
 - time: 30s
   widgets:
     - type: image
       image: Amigos_dusty
       id: attract_image_widget
+      action: update
+      key: attract_base_slide
 - time: 35s
   widgets:
     - type: image
       image: Amigos_lucky
       id: attract_image_widget
+      action: update
+      key: attract_base_slide
 - time: 40s
   widgets:
     - type: image
       image: Amigos_ned
       id: attract_image_widget
+      action: update
+      key: attract_base_slide
 - time: 45s
   widgets:
     - type: image
       image: Amigos_billboard
       id: attract_image_widget
+      action: update
+      key: attract_base_slide
