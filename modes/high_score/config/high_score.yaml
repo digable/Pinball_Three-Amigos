@@ -1,3 +1,5 @@
+#config_version=5
+
 mode:
   priority: 500  # Higher than your game slides so it shows up on top
   start_events: game_ending
