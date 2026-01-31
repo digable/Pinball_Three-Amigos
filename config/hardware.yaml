@@ -84,7 +84,6 @@ slide_player:
 show_player:
   mode_attract_started:
     attract_loop:
-      events_when_stop: mode_attract_stopped
       loops: -1  # This makes it loop forever
 
 switches:
