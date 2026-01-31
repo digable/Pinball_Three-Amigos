@@ -23,12 +23,9 @@ variable_player:
     score: 5
   s_drop_target_right_active:
     score: 5
-  drop_target_bank_dt_bank_complete:
-    score: 50
   drop_target_bank_dt_bank_down:
     score: 50
-  drop_target_bank_dt_bank_all_down:
-    score: 50
+
 
 slides:
   bank_cleared_slide:
@@ -45,7 +42,7 @@ slides:
         color: white
 
 slide_player:
-  drop_target_bank_dt_bank_complete:
+  drop_target_bank_dt_bank_down:
     bank_cleared_slide:
       expire: 2s         # Slide disappears after 2 seconds
       priority: 500      # Higher priority than the score slide so it shows on top
