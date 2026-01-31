@@ -40,25 +40,25 @@ slides:
               text: THANKS FOR PLAYING!
               y: 30%
               font_size: 40
-    leaderboard_slide:
-        widgets:
-            - type: text
-              text: ALL-TIME CHAMPIONS
-              y: 85%
-              font_size: 50
-              color: yellow
-            - type: text
-              text: "GC: (high_score1_name) - (high_score1_value)"
-              y: 60%
-              font_size: 40
-            - type: text
-              text: "HS1: (high_score2_name) - (high_score2_value)"
-              y: 45%
-              font_size: 30
-            - type: text
-              text: "HS2: (high_score3_name) - (high_score3_value)"
-              y: 30%
-              font_size: 30
+    #leaderboard_slide:
+        #widgets:
+           # - type: text
+              #text: ALL-TIME CHAMPIONS
+              #y: 85%
+              #font_size: 50
+              #color: yellow
+            #- type: text
+              #text: "GC: (high_score1_name) - (high_score1_value)"
+              #y: 60%
+              #font_size: 40
+            #- type: text
+              #text: "HS1: (high_score2_name) - (high_score2_value)"
+              #y: 45%
+              #font_size: 30
+            #- type: text
+              #text: "HS2: (high_score3_name) - (high_score3_value)"
+              #y: 30%
+              #font_size: 30
 
     high_score_enter_initials:
         widgets:
