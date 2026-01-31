@@ -11,7 +11,7 @@ p_roc:
 
 modes:
   - base
-  #- high_score
+  - high_score
 
 config:
 - hardware.yaml
