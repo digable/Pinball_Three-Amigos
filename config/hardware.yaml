@@ -94,9 +94,6 @@ slide_player:
   ball_started:
     widgets_ball_started:
       priority: 100  # Keeping this high for gameplay
-  mode_attract_stopped:
-    free_play_overlay:
-      action: remove
       
 show_player:
   mode_attract_started:
