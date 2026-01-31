@@ -59,10 +59,10 @@ slides:
         widgets:
               - type: image
                 image: ZukiDogLogo
-    attract_started:
-        widgets:
-              - type: text
-                text: Attract Mode!!!!!
+    #attract_started:
+        #widgets:
+              #- type: text
+                #text: Attract Mode!!!!!
     widgets_ball_started:
         widgets:
               - type: text
@@ -78,7 +78,7 @@ slides:
 
 slide_player:
     init_done: welcome_slide
-    mode_attract_started: attract_started
+    #mode_attract_started: attract_started
     ball_started: widgets_ball_started
       
 show_player:
