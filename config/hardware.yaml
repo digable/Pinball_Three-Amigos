@@ -95,7 +95,7 @@ slides:
                 text: FREE PLAY / PRESS START
                 style: flashing_text
                 y: 20%
-                background_color: transparent  # This is the magic line!
+        background_color: transparent  # This is the magic line!
 
 slide_player:
   init_done: welcome_slide
