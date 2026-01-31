@@ -160,23 +160,6 @@ show_player:
           attract_cycle:
               loops: -1
 
-high_score:
-      award_names:
-          - Grand Champion
-          - High Score 1
-          - High Score 2
-      categories:
-          score:
-              - Grand Champion
-              - High Score 1
-              - High Score 2
-
-      defaults:
-          score:
-              Grand Champion: 1000
-              High Score 1: 500
-              High Score 2: 250
-
 slide_player:
     init_done: welcome_slide
     mode_attract_started: attract_started
