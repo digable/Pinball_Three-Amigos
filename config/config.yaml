@@ -1,7 +1,7 @@
 #config_version=5
 
 hardware:
-    platform: p3_roc
+  platform: p3_roc
 #    platform: smart_virtual #mpf both -X to run virtual platform now
 
 p_roc:
@@ -10,8 +10,8 @@ p_roc:
   watchdog_time: 1s
 
 modes:
-  - base
-  - high_score
+- base
+- high_score
 
 config:
 - hardware.yaml
