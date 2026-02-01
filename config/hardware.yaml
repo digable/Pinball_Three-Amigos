@@ -16,9 +16,9 @@ window:
   exit_on_escape: true
   source_display: window
 
-#fonts:
-  #amigos_font:
-    #file: WESTERN_LIGHT.ttf
+fonts:
+  amigos_font:
+    file: WESTERN_LIGHT.ttf
 
 displays:
     window:
