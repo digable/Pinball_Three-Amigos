@@ -6,6 +6,11 @@ mode:
   stop_events: high_score_enter_initials_completed
   use_wait_queue: true
 
+# optional: change the slides (you can omit all the following)
+slide_player:
+  _overwrite: True
+  high_score_enter_initials: high_score_enter_initials
+
 slides:
   high_score_enter_initials:
     widgets:
