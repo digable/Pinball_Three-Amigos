@@ -1,7 +1,7 @@
 #config_version=5
 game:
-    balls_per_game: 3
-    max_players: 4
+  balls_per_game: 3
+  max_players: 4
 
 machine:
   balls_installed: 4
@@ -17,9 +17,9 @@ window:
   source_display: window
 
 displays:
-    window:
-        width: 1366
-        height: 768
+  window:
+    width: 1366
+    height: 768
 
 images:
   ZukiDogLogo:
