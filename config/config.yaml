@@ -10,9 +10,9 @@ p_roc:
   watchdog_time: 1s
 
 modes:
-- base
-- high_score
+  - base
+  - high_score
 
 config:
-- hardware.yaml
-- keyboard.yaml
+  - hardware.yaml
+  - keyboard.yaml
