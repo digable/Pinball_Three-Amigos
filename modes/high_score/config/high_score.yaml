@@ -12,6 +12,7 @@ slide_player:
   high_score_enter_initials: high_score_enter_initials
 
 slides:
+  _overwrite: True
   high_score_enter_initials:
     widgets:
       - type: image
