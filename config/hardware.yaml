@@ -60,7 +60,7 @@ widgets:
     text: FREE PLAY / PRESS START
     style: flashing_text
     y: 20%
-    # z: 100
+    z: 100
   p_score_template:
     type: text
     text: (score)
