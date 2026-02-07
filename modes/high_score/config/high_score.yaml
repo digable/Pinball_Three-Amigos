@@ -63,3 +63,38 @@ slides:
       y: 10
       font_size: 30
       color: gray
+  high_score_award_display:
+    - type: text
+      text: (player_name)
+      font_size: 18
+      style: big
+      anchor_y: middle
+      anchor_x: middle
+      x: middle
+      y: middle
+      color: 00ff00
+      animations:
+        show_slide:
+          - property: opacity
+            value: 1
+            duration: 0.05s
+          - property: opacity
+            value: 0
+            duration: 0.05s
+            repeat: true
+    - type: text
+      text: (award)
+      font_size: 18
+      style: big
+      x: 105
+      y: 110
+      color: 0000ff
+    - type: text
+      text: (value)
+      style: big
+      x: 105
+      y: 30
+      color: 4040FF
+      font_size: 20
+      number_grouping: true
+      min_digits: 2
