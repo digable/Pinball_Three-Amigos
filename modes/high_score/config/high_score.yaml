@@ -1,100 +1,138 @@
 #config_version=5
-
 mode:
-  priority: 500
+  # code: mpf.modes.high_score.code.high_score.HighScore
+  priority: 1500
   start_events: game_ending, start_high_score
-  stop_events: high_score_enter_initials_completed
+  game_mode: False
   use_wait_queue: true
 
+# Instructions on how to use this mode:
+# http://docs.missionpinball.org/game_logic/high_scores/index.html
+
 high_score:
-  _overwrite: True
-  enter_initials_timeout: 30s
+  enter_initials_timeout: 60
   award_slide_display_time: 4s
   categories: !!omap
-    - score:
+  - score:
       - GRAND CHAMPION
       - HIGH SCORE 1
       - HIGH SCORE 2
       - HIGH SCORE 3
+      - HIGH SCORE 4
   defaults:
     score:
-      - ZUK: 500000
-      - DOG: 250000
-      - AMY: 100000
-      - GOO: 50000
+      - BRI: 4242
+      - GHK: 2323
+      - JK: 1337
+      - QC: 42
+      - MPF: 23
 
-# optional: change the slides (you can omit all the following)
 slide_player:
-  _overwrite: True
-  high_score_enter_initials: high_score_enter_initials
-  high_score_award_display: high_score_award_display
+  high_score_enter_initials:
+    high_score_enter_initials:
+        action: play
+    high_score_award_display:
+        action: remove
+    #Make sure to remove any slides you add under this high_score_enter_initials slide, or it will continue to
+    #show the award slide instead of initials for another player that also earned a high score.
+    score_award_display:
+        action: remove
+  high_score_award_display:
+    high_score_award_display:
+        action: play
+    high_score_enter_initials:
+        action: remove
+  #This is used to show the slide for a specific award and show additional parameters.  This can include any
+  #static lables as well as dynamic player and machine variables.
+  #You will need to generate this block again and swap the name for any subsequent categories that you want
+  #to show unique additional values.
+  score_award_display:
+    score_award_display:
+        action: play
+        priority: 1
+    high_score_enter_initials:
+        action: remove
 
 slides:
-  _overwrite: True
   high_score_enter_initials:
-    - type: image
-      image: Amigos_billboard  # Using the image you already defined
-    - type: text
-      text: "A NEW HERO EMERGES!"
-      x: 105
-      y: 80
-      font_size: 90
-      color: yellow
-    - type: text
-      text: "SANTO POCO"  # Added some Amigos flavor
-      y: 85
-      font_size: 100        # Much larger
-      color: red
-      font_name: WESTERN_LIGHT
-    - type: text
-      text: (award)
-      y: 65
-      font_size: 60
-      color: white
-      font_name: WESTERN_LIGHT
-    - type: text
-      text: (player_name)
-      y: 40
-      font_size: 250        # Massive initials for that hero moment
-      color: yellow
-      font_name: WESTERN_LIGHT
-    - type: text
-      text: "USE FLIPPERS TO SELECT - START TO ENTER"
-      y: 10
-      font_size: 30
-      color: gray
+  - type: text
+    text: PLAYER (player_num)
+    style: medium
+    y: center + 40%
+  - type: text
+    text: (award)
+    style: small
+    y: center + 20%
+  - type: text_input
+    key: high_score
+    style: medium
+    y: center - 40%
+    max_chars: 3
+    animations:
+      show_slide:
+      - property: opacity
+        value: 1
+        duration: 0.3s
+        easing: in_out_quint
+      - property: opacity
+        value: 0
+        duration: 0.3s
+        repeat: true
+        easing: in_out_quint
+
+  - type: text
+    text: ""
+    y: center - 20%
+    key: high_score
+    style: big
+
   high_score_award_display:
-    - type: text
-      text: (player_name)
-      font_size: 18
-      style: big
-      anchor_y: middle
-      anchor_x: middle
-      x: middle
-      y: middle
-      color: 00ff00
-      animations:
-        show_slide:
-          - property: opacity
-            value: 1
-            duration: 0.05s
-          - property: opacity
-            value: 0
-            duration: 0.05s
-            repeat: true
-    - type: text
-      text: (award)
-      font_size: 18
-      style: big
-      x: 105
-      y: 110
-      color: 0000ff
-    - type: text
-      text: (value)
-      style: big
-      x: 105
-      y: 30
-      color: 4040FF
-      font_size: 20
-      number_grouping: true
-      min_digits: 2
+  - type: text
+    text: (player_name)
+    color: ffffff
+    style: big
+    y: center + 33%
+  - type: text
+    text: (award)
+    color: ffffff
+    style: medium
+    y: center
+  - type: text
+    text: (value)
+    color: ffffff
+    number_grouping: true
+    style: medium
+    y: center - 33%
+
+  #This is the slide for a specific category (in this case "score"), where you can include any values you want.
+  #This can include both player and machine vars. Player vars must have a number associated, otherwise it will
+  #pull from the last user who had a turn, not the user for which the player var applies.
+  #Player Var Syntax: (player(player_num)|variable) where you swap the variable, but do not change before the |
+  #Machine Var Syntax: (machine|variable) where you swap the variable, but do not change before the |
+  score_award_display:
+  - type: text
+    text: (player_name)
+    color: ffffff
+    style: big
+    y: center + 33%
+  - type: text
+    text: (award)
+    color: ffffff
+    style: medium
+    y: center + 15%
+  - type: text
+    text: (value)
+    color: ffffff
+    number_grouping: true
+    style: medium
+    y: center
+  - type: text
+    text: (player(player_num)|ball)
+    color: ffffff
+    style: medium
+    y: center - 15%
+  - type: text
+    text: (machine|credits_string)
+    color: ffffff
+    style: medium
+    y: center - 33%
