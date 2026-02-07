@@ -10,8 +10,7 @@ high_score:
   _overwrite: True
   enter_initials_timeout: 30s
   award_slide_display_time: 4s
-  categories:
-    !!omap
+  categories: !!omap
     - score:
       - GRAND CHAMPION
       - HIGH SCORE 1
@@ -28,6 +27,7 @@ high_score:
 slide_player:
   _overwrite: True
   high_score_enter_initials: high_score_enter_initials
+  high_score_award_display: high_score_award_display
 
 slides:
   _overwrite: True
@@ -36,29 +36,30 @@ slides:
       image: Amigos_billboard  # Using the image you already defined
     - type: text
       text: "A NEW HERO EMERGES!"
-      y: 80%
+      x: 105
+      y: 80
       font_size: 90
       color: yellow
     - type: text
       text: "SANTO POCO"  # Added some Amigos flavor
-      y: 85%
+      y: 85
       font_size: 100        # Much larger
       color: red
       font_name: WESTERN_LIGHT
     - type: text
       text: (award)
-      y: 65%
+      y: 65
       font_size: 60
       color: white
       font_name: WESTERN_LIGHT
     - type: text
       text: (player_name)
-      y: 40%
+      y: 40
       font_size: 250        # Massive initials for that hero moment
       color: yellow
       font_name: WESTERN_LIGHT
     - type: text
       text: "USE FLIPPERS TO SELECT - START TO ENTER"
-      y: 10%
+      y: 10
       font_size: 30
       color: gray
