@@ -1,138 +1,217 @@
-#config_version=5
+##! mode: my_mode
+#! variable_player:
+#!   score_100:
+#!     score: 2000000
+##! mode: high_score
+# modes/high_score/config/high_score.yaml
 mode:
-  # code: mpf.modes.high_score.code.high_score.HighScore
-  priority: 1500
+  priority: 500
   start_events: game_ending, start_high_score
-  game_mode: False
   use_wait_queue: true
-
-# Instructions on how to use this mode:
-# http://docs.missionpinball.org/game_logic/high_scores/index.html
-
 high_score:
+  _overwrite: true
   enter_initials_timeout: 60
   award_slide_display_time: 4s
+  # define your high score categories and the awards
   categories: !!omap
-  - score:
-      - GRAND CHAMPION
-      - HIGH SCORE 1
-      - HIGH SCORE 2
-      - HIGH SCORE 3
-      - HIGH SCORE 4
+    - score:
+        - GRAND CHAMPION
+        - HIGH SCORE 1
+        - HIGH SCORE 2
+        - HIGH SCORE 3
+        - HIGH SCORE 4
+        - HIGH SCORE 5
+        - HIGH SCORE 6
+        - HIGH SCORE 7
+        - HIGH SCORE 8
+    - loops:
+        - LOOP CHAMP
+  # set the defaults
   defaults:
     score:
-      - BRI: 4242
-      - GHK: 2323
-      - JK: 1337
-      - QC: 42
-      - MPF: 23
-
+      - MPF: 1000000
+      - BRI: 900000
+      - JAN: 800000
+      - QUI: 700000
+      - MAR: 600000
+      - JOH: 500000
+      - ELI: 400000
+      - MIK: 300000
+      - ANT: 200000
+    loops:
+      - JAN: 42
+  vars:
+    loops:
+      - player: character
+# optional: change the slides (you can omit all the following)
 slide_player:
-  high_score_enter_initials:
-    high_score_enter_initials:
-        action: play
-    high_score_award_display:
-        action: remove
-    #Make sure to remove any slides you add under this high_score_enter_initials slide, or it will continue to
-    #show the award slide instead of initials for another player that also earned a high score.
-    score_award_display:
-        action: remove
-  high_score_award_display:
-    high_score_award_display:
-        action: play
-    high_score_enter_initials:
-        action: remove
-  #This is used to show the slide for a specific award and show additional parameters.  This can include any
-  #static lables as well as dynamic player and machine variables.
-  #You will need to generate this block again and swap the name for any subsequent categories that you want
-  #to show unique additional values.
-  score_award_display:
-    score_award_display:
-        action: play
-        priority: 1
-    high_score_enter_initials:
-        action: remove
-
+  _overwrite: true
+  high_score_enter_initials: high_score_enter_initials
+  high_score_award_display: high_score_award_display
 slides:
+  _overwrite: true
   high_score_enter_initials:
-  - type: text
-    text: PLAYER (player_num)
-    style: medium
-    y: center + 40%
-  - type: text
-    text: (award)
-    style: small
-    y: center + 20%
-  - type: text_input
-    key: high_score
-    style: medium
-    y: center - 40%
-    max_chars: 3
-    animations:
-      show_slide:
-      - property: opacity
-        value: 1
-        duration: 0.3s
-        easing: in_out_quint
-      - property: opacity
-        value: 0
-        duration: 0.3s
-        repeat: true
-        easing: in_out_quint
-
-  - type: text
-    text: ""
-    y: center - 20%
-    key: high_score
-    style: big
-
+    - type: text
+      style: big
+      font_size: 18
+      text: PLAYER (player_num)
+      color: ffff00
+      x: 105
+      y: 90
+    - type: text
+      style: big
+      font_size: 18
+      text: (award)
+      color: f0f0f0
+      x: 105
+      y: 70
+    - type: text_input
+      initial_char: A
+      dynamic_x: false
+      key: high_score
+      style: big
+      font_size: 18
+      max_chars: 3
+      x: 105
+      y: 20
+      shift_left_event: sw_lower_left_flipper
+      shift_right_event: sw_lower_right_flipper
+      select_event: sw_start
+      color: ff0000
+    - type: text
+      style: big
+      text: '<       >'
+      font_size: 18
+      x: 105
+      y: 20
+      color: ff0000
+    - type: text
+      text: ''
+      key: high_score
+      font_size: 18
+      style: big
+      x: 105
+      y: 50
+      color: ff00ff
+      animations:
+        show_slide:
+          - property: opacity
+            value: 1
+            duration: 0.3s
+            easing: in_out_quint
+          - property: opacity
+            value: 0
+            duration: 0.3s
+            repeat: true
+            easing: in_out_quint
   high_score_award_display:
-  - type: text
-    text: (player_name)
-    color: ffffff
-    style: big
-    y: center + 33%
-  - type: text
-    text: (award)
-    color: ffffff
-    style: medium
-    y: center
-  - type: text
-    text: (value)
-    color: ffffff
-    number_grouping: true
-    style: medium
-    y: center - 33%
-
-  #This is the slide for a specific category (in this case "score"), where you can include any values you want.
-  #This can include both player and machine vars. Player vars must have a number associated, otherwise it will
-  #pull from the last user who had a turn, not the user for which the player var applies.
-  #Player Var Syntax: (player(player_num)|variable) where you swap the variable, but do not change before the |
-  #Machine Var Syntax: (machine|variable) where you swap the variable, but do not change before the |
-  score_award_display:
-  - type: text
-    text: (player_name)
-    color: ffffff
-    style: big
-    y: center + 33%
-  - type: text
-    text: (award)
-    color: ffffff
-    style: medium
-    y: center + 15%
-  - type: text
-    text: (value)
-    color: ffffff
-    number_grouping: true
-    style: medium
-    y: center
-  - type: text
-    text: (player(player_num)|ball)
-    color: ffffff
-    style: medium
-    y: center - 15%
-  - type: text
-    text: (machine|credits_string)
-    color: ffffff
-    style: medium
-    y: center - 33%
+    - type: text
+      text: (player_name)
+      font_size: 18
+      style: big
+      anchor_y: middle
+      anchor_x: middle
+      x: middle
+      y: middle
+      color: 00ff00
+      animations:
+        show_slide:
+          - property: opacity
+            value: 1
+            duration: 0.05s
+          - property: opacity
+            value: 0
+            duration: 0.05s
+            repeat: true
+    - type: text
+      text: (award)
+      font_size: 18
+      style: big
+      x: 105
+      y: 110
+      color: 0000ff
+    - type: text
+      text: (value)
+      style: big
+      x: 105
+      y: 30
+      color: 4040FF
+      font_size: 20
+      number_grouping: true
+      min_digits: 2
+loops_award_display:
+    - type: text
+      text: (player_name)
+      font_size: 18
+      style: big
+      anchor_y: middle
+      anchor_x: middle
+      x: middle
+      y: middle
+      color: 00ff00
+      animations:
+        show_slide:
+          - property: opacity
+            value: 1
+            duration: 0.05s
+          - property: opacity
+            value: 0
+            duration: 0.05s
+            repeat: true
+    - type: text
+      text: (award)
+      font_size: 18
+      style: big
+      x: 105
+      y: 110
+      color: 0000ff
+    - type: text
+      text: (value)
+      style: big
+      x: 105
+      y: 30
+      color: 4040FF
+      font_size: 20
+      number_grouping: true
+      min_digits: 2
+    - type: text
+      text: (player(player_num)|character)
+      style: big
+      x: 105
+      y: 10
+      color: 4040FF
+      font_size: 20
+##! test
+#! assert_machine_variable 1000000 score1_value
+#! assert_machine_variable MPF score1_name
+#! assert_machine_variable "GRAND CHAMPION" score1_label
+#! assert_machine_variable 200000 score9_value
+#! assert_machine_variable ANT score9_name
+#! assert_machine_variable "HIGH SCORE 8" score9_label
+#! start_game
+#! start_mode my_mode
+#! post score_100
+#! assert_player_variable 2000000 score
+#! drain_all_balls
+#! advance_time_and_run 1
+#! assert_player_variable 2 ball
+#! drain_all_balls
+#! advance_time_and_run 1
+#! assert_player_variable 3 ball
+#! mock_event high_score_enter_initials
+#! drain_all_balls
+#! advance_time_and_run 1
+#! assert_player_variable 3 ball
+#! assert_event_called high_score_enter_initials
+#! post text_input_high_score_complete text=JAB
+#! advance_time_and_run 10
+#! assert_mode_not_running game
+#! assert_machine_variable 2000000 score1_value
+#! assert_machine_variable JAB score1_name
+#! assert_machine_variable "GRAND CHAMPION" score1_label
+#! assert_machine_variable 1000000 score2_value
+#! assert_machine_variable MPF score2_name
+#! assert_machine_variable "HIGH SCORE 1" score2_label
+#! assert_machine_variable 300000 score9_value
+#! assert_machine_variable MIK score9_name
+#! assert_machine_variable "HIGH SCORE 8" score9_label
