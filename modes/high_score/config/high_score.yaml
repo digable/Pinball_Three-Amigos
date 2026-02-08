@@ -29,15 +29,15 @@ high_score:
   # set the defaults
   defaults:
     score:
-      - MPF: 1000000
-      - BRI: 900000
-      - JAN: 800000
-      - QUI: 700000
-      - MAR: 600000
-      - JOH: 500000
-      - ELI: 400000
-      - MIK: 300000
-      - ANT: 200000
+      - MPF: 100
+      - BRI: 90
+      - JAN: 80
+      - QUI: 70
+      - MAR: 60
+      - JOH: 50
+      - ELI: 40
+      - MIK: 30
+      - ANT: 20
     loops:
       - JAN: 42
   vars:
