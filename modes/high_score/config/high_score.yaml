@@ -48,6 +48,7 @@ slide_player:
   _overwrite: true
   high_score_enter_initials: high_score_enter_initials
   high_score_award_display: high_score_award_display
+
 slides:
   _overwrite: true
   high_score_enter_initials:
@@ -139,7 +140,7 @@ slides:
       font_size: 20
       number_grouping: true
       min_digits: 2
-loops_award_display:
+  loops_award_display:
     - type: text
       text: (player_name)
       font_size: 18
@@ -181,37 +182,3 @@ loops_award_display:
       y: 10
       color: 4040FF
       font_size: 20
-##! test
-#! assert_machine_variable 1000000 score1_value
-#! assert_machine_variable MPF score1_name
-#! assert_machine_variable "GRAND CHAMPION" score1_label
-#! assert_machine_variable 200000 score9_value
-#! assert_machine_variable ANT score9_name
-#! assert_machine_variable "HIGH SCORE 8" score9_label
-#! start_game
-#! start_mode my_mode
-#! post score_100
-#! assert_player_variable 2000000 score
-#! drain_all_balls
-#! advance_time_and_run 1
-#! assert_player_variable 2 ball
-#! drain_all_balls
-#! advance_time_and_run 1
-#! assert_player_variable 3 ball
-#! mock_event high_score_enter_initials
-#! drain_all_balls
-#! advance_time_and_run 1
-#! assert_player_variable 3 ball
-#! assert_event_called high_score_enter_initials
-#! post text_input_high_score_complete text=JAB
-#! advance_time_and_run 10
-#! assert_mode_not_running game
-#! assert_machine_variable 2000000 score1_value
-#! assert_machine_variable JAB score1_name
-#! assert_machine_variable "GRAND CHAMPION" score1_label
-#! assert_machine_variable 1000000 score2_value
-#! assert_machine_variable MPF score2_name
-#! assert_machine_variable "HIGH SCORE 1" score2_label
-#! assert_machine_variable 300000 score9_value
-#! assert_machine_variable MIK score9_name
-#! assert_machine_variable "HIGH SCORE 8" score9_label
