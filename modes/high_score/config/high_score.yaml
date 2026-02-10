@@ -75,8 +75,8 @@ slides:
       max_chars: 3
       x: 105
       y: 20
-      shift_left_event: sw_lower_left_flipper
-      shift_right_event: sw_lower_right_flipper
+      shift_left_event: s_left_flipper
+      shift_right_event: s_right_flipper
       select_event: sw_start
       color: ff0000
     - type: text
