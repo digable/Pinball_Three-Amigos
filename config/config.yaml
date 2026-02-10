@@ -1,88 +1,32 @@
 #config_version=5
-mode:
-  start_events: ball_starting
-  stop_events: game_ended
-  priority: 100
 
-variable_player:
-  s_spinner_active:
-    score: 5
-  s_L_circle_active:
-    score: 50
-  s_C_CaptiveStanding_active:
-    score: 10
-  s_L_RightRamp_active:
-    score: 10
-  s_R_RightRamp_active:
-    score: 10
-  s_right_jet_active:
-    score: 5
-  s_drop_target_left_active:
-    score: 5
-  s_drop_target_middle_active:
-    score: 5
-  s_drop_target_right_active:
-    score: 5
-  drop_target_bank_dt_bank_down:
-    score: 50
+hardware:
+  platform: p3_roc
+#    platform: smart_virtual #mpf both -X to run virtual platform now
 
+p_roc:
+  driverboards: pdb
+  use_watchdog: true
+  watchdog_time: 1s
+
+config:
+  - hardware.yaml
+  - keyboard.yaml
+
+modes:
+  - base
+  - high_score
 
 slides:
-  # Rename this slightly to ensure no conflicts with other modes
-  mode_base_bank_cleared:
+  welcome_slide:
     widgets:
       - type: text
-        text: BANK CLEARED!
-        font_size: 80
-        color: green
-      - type: text
-        text: "+50 POINTS"  # Added quotes for safety
-        y: 30%
-        font_size: 40
+        text: PINBALL!
+        font_size: 50
+        color: red
+      - type: rectangle
+        width: 240
+        height: 60
 
 slide_player:
-  mode_base_started:
-    widgets:
-      - type: text
-        text: (score)
-        number_grouping: true
-        min_digits: 2
-        font_size: 100
-      - type: text
-        text: PLAYER (number)
-        y: 10
-        x: 10
-        font_size: 50
-        anchor_x: left
-        anchor_y: bottom
-      - type: text
-        text: BALL (ball)
-        y: 10
-        x: right-10
-        anchor_x: right
-        anchor_y: bottom
-        font_size: 50
-  drop_target_bank_dt_bank_down:
-    mode_base_bank_cleared:
-      target: window      # Explicitly tell it where to go
-      expire: 2s
-      priority: 1000      # Make it high to "overrule" everything
-widget_styles:
-  attract_mode_high_score_display_label:
-    font_size: 30
-    anchor_x: right
-    anchor_y: top
-    x: center-10
-    bold: true
-  attract_mode_high_score_display_name:
-    font_size: 30
-    anchor_x: right
-    anchor_y: top
-    x: center+70
-  attract_mode_high_score_display_score:
-    font_size: 30
-    anchor_x: left
-    anchor_y: top
-    x: center+90
-    number_grouping: true
-    min_digits: 1
+  init_done: welcome_slide
