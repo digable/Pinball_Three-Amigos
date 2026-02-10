@@ -43,6 +43,26 @@ images:
   Amigos_billboard:
     file: Billboard.png
 
+widget_styles:
+  attract_mode_high_score_display_label:
+    font_size: 30
+    anchor_x: right
+    anchor_y: top
+    x: center-10
+    bold: true
+  attract_mode_high_score_display_name:
+    font_size: 30
+    anchor_x: right
+    anchor_y: top
+    x: center+70
+  attract_mode_high_score_display_score:
+    font_size: 30
+    anchor_x: left
+    anchor_y: top
+    x: center+90
+    number_grouping: true
+    min_digits: 1
+
 switches:
     s_left_flipper:
         number: A1-B0-1
