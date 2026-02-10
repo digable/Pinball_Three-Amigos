@@ -6,7 +6,7 @@
       widgets:
         - type: image
           image: MPF_logo
-- time: 5
+- time: 5s
     slides:
     show_high_scores:
       widgets:
