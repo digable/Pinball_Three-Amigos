@@ -59,7 +59,7 @@ slides:
     anchor_x: left
     anchor_y: bottom
     x: left+50
-    y: bottom+200
+    y: bottom+300
     # x: 105
     # y: 90
 
@@ -71,7 +71,7 @@ slides:
     anchor_x: left
     anchor_y: bottom
     x: left+50
-    y: bottom+140
+    y: bottom+240
     # x: 105
     # y: 70
 
@@ -85,7 +85,7 @@ slides:
     anchor_x: left
     anchor_y: bottom
     x: left+100
-    y: bottom+80
+    y: bottom+180
     # x: 105
     # y: 20
     shift_left_event: s_left_flipper_active
@@ -100,7 +100,7 @@ slides:
     anchor_x: left
     anchor_y: bottom
     x: left+50
-    y: bottom+80
+    y: bottom+180
     # x: 105
     # y: 20
     color: ff0000
@@ -111,7 +111,7 @@ slides:
     key: high_score
     font_size: 50
     x: left+120
-    y: bottom+50
+    y: bottom+150
     # style: tall_title
     color: ff00ff
     animations:
