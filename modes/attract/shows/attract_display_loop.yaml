@@ -108,27 +108,3 @@
           text: (machine|score3_value)
           style: attract_mode_high_score_display_score
           y: top-280
-        - type: Text
-          text: LOOP CHAMPION
-          font_size: 60
-          bold: true
-          anchor_x: center
-          anchor_y: center
-          x: center
-          y: top-500
-        - type: Text
-          text: (machine|loops1_label)
-          style: attract_mode_high_score_display_label
-          y: top-600
-        - type: Text
-          text: (machine|loops1_name)
-          style: attract_mode_high_score_display_name
-          y: top-600
-        - type: Text
-          text: (machine|loops1_value)
-          style: attract_mode_high_score_display_score
-          y: top-600
-        - type: Text
-          text: (machine|loops1_player_character)
-          style: attract_mode_high_score_display_score
-          y: top-600
