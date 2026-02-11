@@ -14,10 +14,10 @@ high_score:
   categories: !!omap
   - score:
       - El Amigo Supremo
-      - The First Amigo
-      - The Second Amigo
-      - The Third Amigo
-      - Amigo in training
+      - The First Amigo 1
+      - The Second Amigo 2
+      - The Third Amigo 3
+      - Amigo in training 4
 
   # set the defaults
   defaults:
