@@ -16,7 +16,6 @@ config:
 modes:
   - base
   - high_score
-  - attract
 
 slides:
   welcome_slide:
