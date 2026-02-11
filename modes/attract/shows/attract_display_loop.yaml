@@ -1,5 +1,4 @@
 #show_version=5
-
 - time: 0s
   slides:
     attract_slide_1:
@@ -64,7 +63,7 @@
   slides:
     show_high_scores:
       widgets:
-        - type: Text
+        - type: text
           text: HIGH SCORES
           font_size: 60
           bold: true
@@ -72,39 +71,51 @@
           anchor_y: center
           x: center
           y: top-100
-        - type: Text
+        - type: text
           text: (machine|score1_label)
           style: attract_mode_high_score_display_label
           y: top-200
-        - type: Text
+        - type: text
           text: (machine|score1_name)
           style: attract_mode_high_score_display_name
           y: top-200
-        - type: Text
+        - type: text
           text: (machine|score1_value)
           style: attract_mode_high_score_display_score
           y: top-200
-        - type: Text
+        - type: text
           text: (machine|score2_label)
           style: attract_mode_high_score_display_label
           y: top-240
-        - type: Text
+        - type: text
           text: (machine|score2_name)
           style: attract_mode_high_score_display_name
           y: top-240
-        - type: Text
+        - type: text
           text: (machine|score2_value)
           style: attract_mode_high_score_display_score
           y: top-240
-        - type: Text
+        - type: text
           text: (machine|score3_label)
           style: attract_mode_high_score_display_label
           y: top-280
-        - type: Text
+        - type: text
           text: (machine|score3_name)
           style: attract_mode_high_score_display_name
           y: top-280
-        - type: Text
+        - type: text
           text: (machine|score3_value)
           style: attract_mode_high_score_display_score
           y: top-280
+        - type: text
+          text: (machine|score4_label)
+          style: attract_mode_high_score_display_label
+          y: top-320
+        - type: text
+          text: (machine|score4_name)
+          style: attract_mode_high_score_display_name
+          y: top-320
+        - type: text
+          text: (machine|score4_value)
+          style: attract_mode_high_score_display_score
+          y: top-320
