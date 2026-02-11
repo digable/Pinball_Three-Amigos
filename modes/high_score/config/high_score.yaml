@@ -18,10 +18,6 @@ high_score:
       - The Second Amigo
       - The Third Amigo
       - Amigo in training
-  - loops:
-      - LOOP CHAMP
-  - completed_spins:
-      - SPIN CHAMP
 
   # set the defaults
   defaults:
@@ -31,10 +27,6 @@ high_score:
       - JAN: 8
       - QUI: 7
       - MAR: 6
-    loops:
-      - JAN: 1
-    completed_spins:
-      - COO: 1
 
 #sound_player:
   #high_score_enter_initials:
