@@ -62,6 +62,27 @@ slide_player:
         anchor_x: right
         anchor_y: bottom
         font_size: 50
+
+widget_styles:
+  attract_mode_high_score_display_label:
+    font_size: 30
+    anchor_x: right
+    anchor_y: top
+    x: center-10
+    bold: true
+  attract_mode_high_score_display_name:
+    font_size: 30
+    anchor_x: right
+    anchor_y: top
+    x: center+70
+  attract_mode_high_score_display_score:
+    font_size: 30
+    anchor_x: left
+    anchor_y: top
+    x: center+90
+    number_grouping: true
+    min_digits: 1
+
   drop_target_bank_dt_bank_down:
     mode_base_bank_cleared:
       target: window      # Explicitly tell it where to go
