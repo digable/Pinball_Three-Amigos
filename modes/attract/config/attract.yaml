@@ -3,6 +3,8 @@
 #! - duration: .1
 #!   events: ok_super
 ##! mode: attract
+mode:
+  priority: 100
 
 show_player:
   mode_attract_started: attract_display_loop
