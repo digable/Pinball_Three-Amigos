@@ -14,9 +14,9 @@ config:
   - keyboard.yaml
 
 modes:
-  - attract
   - base
   - high_score
+  - attract
 
 slides:
   welcome_slide:
