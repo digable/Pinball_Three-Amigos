@@ -4,7 +4,8 @@
 #!   events: ok_super
 ##! mode: attract
 mode:
-  priority: 100
+  priority: 500
+  start_events: game_ending, start_high_score
 
 show_player:
   mode_attract_started: attract_display_loop
