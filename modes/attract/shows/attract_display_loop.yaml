@@ -1,11 +1,11 @@
 #show_version=5
-- duration: 0
+- duration: 0s
   slides:
     attract_slide_1:
       widgets:
         - type: image
           image: ZukiDogLogo
-- duration: 5
+- duration: 5s
   slides:
     show_high_scores:
       widgets:
@@ -65,55 +65,55 @@
           text: (machine|score4_value)
           style: attract_mode_high_score_display_score
           y: top-320
-- duration: 10
+- duration: 10s
   slides:
     attract_slide_3:
       widgets:
         - type: image
           image: Multimorphic_logo
-- duration: 15
+- duration: 15s
   slides:
     attract_slide_4:
       widgets:
         - type: image
           image: PinballLife_logo
-- duration: 20
+- duration: 20s
   slides:
     attract_slide_5:
       widgets:
         - type: image
           image: Amigos_dogs
-- duration: 25
+- duration: 25s
   slides:
     attract_slide_6:
       widgets:
         - type: image
           image: Amigos_lions
-- duration: 30
+- duration: 30s
   slides:
     attract_slide_7:
       widgets:
         - type: image
           image: Amigos_dusty
-- duration: 35
+- duration: 35s
   slides:
     attract_slide_8:
       widgets:
         - type: image
           image: Amigos_lucky
-- duration: 40
+- duration: 40s
   slides:
     attract_slide_9:
       widgets:
         - type: image
           image: Amigos_ned
-- duration: 45
+- duration: 45s
   slides:
     attract_slide_10:
       widgets:
         - type: image
           image: Amigos_billboard
-- duration: 50
+- duration: 50s
   slides:
     attract_slide_2:
       widgets:
