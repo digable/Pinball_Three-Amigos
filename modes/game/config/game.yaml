@@ -1,0 +1,179 @@
+#config_version=5
+
+sound_player:
+  player_adding{number==1}:
+    voice_add_player_1:
+      action: play
+      loops: 0
+  player_adding{number==2}:
+      voice_add_player_2:
+        action: play
+        loops: 0
+  player_adding{number==3}:
+      voice_add_player_3:
+        action: play
+        loops: 0
+  player_adding{number==4}:
+      voice_add_player_4:
+        action: play
+        loops: 0
+      
+slides:
+  base_slide: []
+  multiplayer_slide: []
+
+slide_player:
+  single_player_ball_started: base_slide
+  multi_player_ball_started: multiplayer_slide
+  multiplayer_game:
+    base_slide:
+      action: remove
+    multiplayer_slide:
+      action: play
+  ball_will_end:
+    base_slide:
+      action: remove
+    multiplayer_slide:
+      action: remove
+
+widgets:
+  base_score_widget:
+    - type: text
+      text: (score)
+      style: base_score_display
+  base_ball_widget:
+    - type: text
+      text: BALL (ball)    (machine|credits_string)
+      style: base_ball_display
+  mp_score_widget:
+    - type: text
+      text: (score)
+      style: base_score_display
+
+  #INFO: Player 1 score, for when they're not playing
+  mp_score_widget_player_1:
+    - type: text
+      text: (player1|score)
+      style: base_player1_display
+    - type: text
+      text: BALL (ball)    (machine|credits_string)
+      style: base_ball_display
+  #INFO: Player 1 name, when they are playing
+  mp_name_widget_player_1:
+    - type: text
+      text: Drunkard 1
+      style: base_player1_display
+      
+  #INFO: Player 2 score, for when they're not playing
+  mp_score_widget_player_2:
+    - type: text
+      text: (player2|score)
+      style: base_player2_display
+    - type: text
+      text: BALL (ball)    (machine|credits_string)
+      style: base_ball_display
+  #INFO: Player 2 name, when they are playing
+  mp_name_widget_player_2:
+    - type: text
+      text: Drunkard 2
+      style: base_player2_display
+
+  #INFO: Player 3 score, for when they're not playing
+  mp_score_widget_player_3:
+    - type: text
+      text: (player3|score)
+      style: base_player3_display
+    - type: text
+      text: BALL (ball)    (machine|credits_string)
+      style: base_ball_display
+  #INFO: Player 3 name, when they are playing
+  mp_name_widget_player_3:
+    - type: text
+      text: Drunkard 3
+      style: base_player3_display
+
+  #INFO: Player 4 score, for when they're not playing
+  mp_score_widget_player_4:
+    - type: text
+      text: (player4|score)
+      style: base_player4_display
+    - type: text
+      text: BALL (ball)    (machine|credits_string)
+      style: base_ball_display
+  #INFO: Player 4 name, when they are playing
+  mp_name_widget_player_4:
+    - type: text
+      text: Drunkard 4
+      style: base_player4_display
+
+widget_player:
+  # First event, before additional players have a chance to enter
+  mode_base_started:
+    base_score_widget:
+      slide: base_slide
+    base_ball_widget:
+      slide: base_slide
+# Player 2 has entered the game
+  player_added{num==2}:
+    base_slide:
+      action: remove
+    mp_score_widget:
+      slide: multiplayer_slide
+    base_ball_widget:
+      slide: multiplayer_slide
+    mp_score_widget_player_2:
+      slide: multiplayer_slide
+# Player 3 has entered the game
+  player_added{num==3}:
+    mp_score_widget_player_3:
+      slide: multiplayer_slide
+# Player 4 has entered the game
+  player_added{num==4}:
+    mp_score_widget_player_4:
+      slide: multiplayer_slide
+
+
+# Player Turns: Swap scores -> names when turn starts, revert when turn ends
+  player_turn_started{number==1}:
+    mp_score_widget_player_1:
+      action: remove
+    mp_name_widget_player_1:
+      slide: multiplayer_slide
+  player_turn_ended{number==1}:
+    mp_name_widget_player_1:
+      action: remove
+    mp_score_widget_player_1:
+      slide: multiplayer_slide
+
+  player_turn_started{number==2}:
+    mp_score_widget_player_2:
+      action: remove
+    mp_name_widget_player_2:
+      slide: multiplayer_slide
+  player_turn_ended{number==2}:
+    mp_name_widget_player_2:
+      action: remove
+    mp_score_widget_player_2:
+      slide: multiplayer_slide
+
+  player_turn_started{number==3}:
+    mp_score_widget_player_3:
+      action: remove
+    mp_name_widget_player_3:
+      slide: multiplayer_slide
+  player_turn_ended{number==3}:
+    mp_name_widget_player_3:
+      action: remove
+    mp_score_widget_player_3:
+      slide: multiplayer_slide
+
+  player_turn_started{number==4}:
+    mp_score_widget_player_4:
+      action: remove
+    mp_name_widget_player_4:
+      slide: multiplayer_slide
+  player_turn_ended{number==4}:
+    mp_name_widget_player_4:
+      action: remove
+    mp_score_widget_player_4:
+      slide: multiplayer_slide
