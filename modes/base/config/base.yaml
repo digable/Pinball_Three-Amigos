@@ -26,7 +26,6 @@ variable_player:
   drop_target_bank_dt_bank_down:
     score: 50
 
-
 slides:
   # Rename this slightly to ensure no conflicts with other modes
   mode_base_bank_cleared:
@@ -39,6 +38,12 @@ slides:
         text: "+50 POINTS"  # Added quotes for safety
         y: 30%
         font_size: 40
+  skill_success_slide:
+    widgets:
+      - type: video
+        video: skill
+        end_behavior: stop
+    expire: 2s
 
 slide_player:
   mode_base_started:
@@ -67,3 +72,7 @@ slide_player:
       target: window      # Explicitly tell it where to go
       expire: 2s
       priority: 1000      # Make it high to "overrule" everything
+    skill_success_slide:
+      target: window      # Explicitly tell it where to go
+      expire: 2s
+      priority: 1001      # Make it high to "overrule" everything
