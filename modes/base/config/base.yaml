@@ -74,5 +74,5 @@ slide_player:
       priority: 1000      # Make it high to "overrule" everything
     skill_success_slide:
       target: window      # Explicitly tell it where to go
-      expire: 2s
+      expire: 3s
       priority: 1001      # Make it high to "overrule" everything
