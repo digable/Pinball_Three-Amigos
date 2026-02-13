@@ -14,8 +14,8 @@ window:
   fullscreen: true
   borderless: true
   exit_on_escape: true
+  allow_window_resize: true
   source_display: window
-  vsync: false
 
 displays:
   window:
