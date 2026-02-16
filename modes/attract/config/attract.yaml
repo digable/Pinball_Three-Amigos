@@ -8,6 +8,8 @@ mode:
 
 show_player:
   mode_attract_started: attract_display_loop
+event_player:
+  mode_attract_stopped: stop_music_track
 
 sound_player:
   mode_attract_started:
