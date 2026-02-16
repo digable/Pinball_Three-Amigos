@@ -12,6 +12,7 @@ p_roc:
 config:
   - hardware.yaml
   - keyboard.yaml
+  - sounds.yaml
 
 modes:
   - base
