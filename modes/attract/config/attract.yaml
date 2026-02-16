@@ -3,19 +3,15 @@
 #! - duration: .1
 #!   events: ok_super
 ##! mode: attract
-mode:
-  stop_events: game_start
 
 show_player:
   mode_attract_started: attract_display_loop
-event_player:
-  mode_attract_stopped: stop_music_track
 
 sound_player:
   mode_attract_started:
       song_attract:
           action: play
-          loops: -1
+          #loops: -1
   mode_attract_stopped:
       song_attract:
           action: stop
