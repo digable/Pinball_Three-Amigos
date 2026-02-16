@@ -18,4 +18,3 @@ sound_player:
   mode_attract_stopped:
     music:
       action: stop_all_sounds
-      fade: 0.5s
