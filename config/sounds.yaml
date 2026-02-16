@@ -11,7 +11,7 @@ sound_system:
           type: standard
           simultaneous_sounds: 1
           events_when_stopped: music_track_stopped
-          events_when_played: music_track_played, keep_going
+          events_when_played: music_track_played
           events_when_paused: music_track_paused
        voice:
           volume: 0.7
