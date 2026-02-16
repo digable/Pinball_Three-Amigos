@@ -1,0 +1,179 @@
+#config_version=5
+
+sound_system:
+    # buffer: 2048
+    # frequency: 44100
+    # channels: 2
+    master_volume: 0.75
+    tracks:
+       music:
+          volume: 0.5
+          type: standard
+          simultaneous_sounds: 1
+          events_when_stopped: music_track_stopped
+          events_when_played: music_track_played, keep_going
+          events_when_paused: music_track_paused
+       voice:
+          volume: 0.7
+          type: standard
+          simultaneous_sounds: 1
+       sfx:
+          volume: 0.6
+          type: standard
+          simultaneous_sounds: 8
+
+sounds:
+    song_attract:
+        file: shrunk.ogg
+        volume: 1.0
+        track: music
+        priority: 100
+        about_to_finish_time: 2s
+        events_when_about_to_finish: song_attract_about_to_finish
+    song_01:
+        file: none_shall_pass.ogg
+        volume: 1.0
+        track: music
+        priority: 100
+        about_to_finish_time: 2s
+        events_when_about_to_finish: song_01_about_to_finish
+        mode_end_action: stop
+    song_02:
+        file: kirby.ogg
+        volume: 1.0
+        track: music
+        priority: 100
+        about_to_finish_time: 2s
+        events_when_about_to_finish: song_02_about_to_finish
+    song_enter_initials:
+        file: enter_initials.ogg
+        volume: 1.0
+        track: music
+        priority: 100
+        about_to_finish_time: 2s
+        events_when_about_to_finish: song_enter_initials
+        mode_end_action: stop
+    sfx_fan:
+        file: fan.ogg
+        volume: 0.75
+        track: sfx
+        ducking:
+            target: music
+            delay: 0s
+            attack: 1s
+            attenuation: -18db
+            release_point: 0.5s
+            release: 2s
+    sfx_hiccuping:
+        file: hiccuping.ogg
+        volume: 0.75
+        track: sfx
+    sfx_coin:
+        file: coin_drop.ogg
+        volume: 0.75
+        track: sfx
+    sfx_tilt_warning1:
+        file: warning1.ogg
+        volume: 0.75
+        track: sfx
+    sfx_tilt_warning2:
+        file: warning2.ogg
+        volume: 0.75
+        track: sfx
+    sfx_bar_noise:
+        file: bar_noise.ogg
+        volume: 0.4
+        track: sfx
+    sfx_ball_drain:
+        file: ball_drain.ogg
+        volume: 0.75
+        track: sfx
+    sfx_skill_fail:
+        file: skill_fail.ogg
+        volume: 0.75
+        track: sfx
+    sfx_belch:
+        file: belch.ogg
+        volume: 0.75
+        track: sfx
+    sfx_chug:
+        file: vari_chug.ogg
+        volume: 0.75
+        track: sfx
+    sfx_gun_shot:
+        file: gun_shot.wav
+        volume: 0.75
+        track: sfx
+    sfx_punch_1:
+        file: punch_1.wav
+        volume: 0.75
+        track: sfx
+    sfx_punch_2:
+        file: punch_2.wav
+        volume: 0.75
+        track: sfx
+    voice_laugh:
+        file: tilt_laugh.ogg
+        volume: 0.75
+        track: voice
+    voice_awe:
+        file: awe.ogg
+        volume: 0.75
+        track: voice
+    voice_skill:
+        file: skill.ogg
+        volume: 0.75
+        track: voice
+    voice_add_player_1:
+        file: add_player_1.ogg
+        volume: 1
+        track: voice
+    voice_add_player_2:
+        file: add_player_2.ogg
+        volume: 1
+        track: voice
+    voice_add_player_3:
+        file: add_player_3.ogg
+        volume: 1
+        track: voice
+    voice_add_player_4:
+        file: add_player_4.ogg
+        volume: 1
+        track: voice
+
+track_player:
+    stop_all_tracks:
+        __all__:
+            action: stop
+            fade: 1.5 sec
+    stop_music_track:
+        music:
+            action: stop
+            fade: 1.5 sec
+    play_music_track:
+        music:
+            action: play
+            fade: 1.5 sec
+    pause_music_track:
+        music:
+             action: pause
+    resume_music_track:
+        music:
+             action: play
+    set_music_track_volume_loud:
+        music:
+             action: set_volume
+             volume: 0.95
+             fade: 0.5 sec
+    set_music_track_volume_quiet:
+        music:
+             action: set_volume
+             volume: 0.3
+             fade: 0.5 sec
+    stop_all_sounds_on_music_track:
+        music:
+             action: stop_all_sounds
+             fade: 0.5 sec
+    stop_all_sounds:
+        __all__:
+             action: stop_all_sounds
