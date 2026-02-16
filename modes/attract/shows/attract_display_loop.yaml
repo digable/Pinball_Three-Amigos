@@ -4,7 +4,7 @@
     attract_slide_1:
       widgets:
         - type: image
-          image: ZukiDogLogo
+          image: Amigos_billboard
 - time: 5
   slides:
     show_high_scores:
@@ -65,57 +65,57 @@
           text: (machine|score4_value)
           style: attract_mode_high_score_display_score
           y: top-320
-- time: 10
+- time: 15
+  slides:
+    attract_slide_2:
+      widgets:
+        - type: image
+          image: Amigos_dogs
+- time: 20
   slides:
     attract_slide_3:
       widgets:
         - type: image
-          image: Multimorphic_logo
-- time: 15
+          image: Amigos_lions
+- time: 25
   slides:
     attract_slide_4:
       widgets:
         - type: image
-          image: PinballLife_logo
-- time: 20
+          image: Amigos_dusty
+- time: 28
   slides:
     attract_slide_5:
       widgets:
         - type: image
-          image: Amigos_dogs
-- time: 25
+          image: Amigos_lucky
+- time: 31
   slides:
     attract_slide_6:
       widgets:
         - type: image
-          image: Amigos_lions
-- time: 30
+          image: Amigos_ned
+- time: 34
   slides:
     attract_slide_7:
       widgets:
         - type: image
-          image: Amigos_dusty
-- time: 35
+          image: ZukiDogLogo
+- time: 36
   slides:
     attract_slide_8:
       widgets:
         - type: image
-          image: Amigos_lucky
-- time: 40
+          image: Multimorphic_logo
+- time: 38
   slides:
     attract_slide_9:
       widgets:
         - type: image
-          image: Amigos_ned
-- time: 45
+          image: PinballLife_logo
+- time: 40
   slides:
     attract_slide_10:
-      widgets:
-        - type: image
-          image: Amigos_billboard
-- time: 50
-  slides:
-    attract_slide_2:
       widgets:
         - type: image
           image: MPF_logo
