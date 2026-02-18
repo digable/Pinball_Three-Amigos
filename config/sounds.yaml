@@ -24,7 +24,7 @@ sound_system:
 
 sounds:
     song_attract:
-        file: shrunk.ogg
+        file: attract_intro.ogg
         volume: 1.0
         track: music
         priority: 100
@@ -32,7 +32,7 @@ sounds:
         events_when_about_to_finish: song_attract_about_to_finish
         mode_end_action: stop
     song_01:
-        file: none_shall_pass.ogg
+        file: gamePlay.ogg
         volume: 1.0
         track: music
         priority: 100
