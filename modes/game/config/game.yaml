@@ -1,5 +1,23 @@
 #config_version=5
-      
+
+sound_player:
+  player_adding{number==1}:
+    voice_add_player_1:
+      action: play
+      loops: 0
+  player_adding{number==2}:
+      voice_add_player_2:
+        action: play
+        loops: 0
+  player_adding{number==3}:
+      voice_add_player_3:
+        action: play
+        loops: 0
+  player_adding{number==4}:
+      voice_add_player_4:
+        action: play
+        loops: 0
+
 slides:
   base_slide: []
   multiplayer_slide: []
