@@ -48,12 +48,14 @@ images:
 
 widget_styles:
   attract_mode_high_score_display_label:
+    font_name: WESTERN_LIGHT
     font_size: 30
     anchor_x: right
     anchor_y: top
     x: center-10
     bold: true
   attract_mode_high_score_display_name:
+    font_name: WESTERN_LIGHT
     font_size: 30
     anchor_x: right
     anchor_y: top
