@@ -113,6 +113,14 @@ sounds:
         file: punch_2.wav
         volume: 0.75
         track: sfx
+    sfx_initials_left:
+        file: initials_left.ogg
+        volume: 0.75
+        track: sfx
+    sfx_initials_right:
+        file: initials_right.ogg
+        volume: 0.75
+        track: sfx
     voice_laugh:
         file: tilt_laugh.ogg
         volume: 0.75
