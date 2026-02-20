@@ -48,7 +48,7 @@ sounds:
         events_when_about_to_finish: song_02_about_to_finish
     song_enter_initials:
         file: enter_initials.ogg
-        volume: 1.0
+        volume: 0.75
         track: music
         priority: 100
         about_to_finish_time: 2s
@@ -115,11 +115,11 @@ sounds:
         track: sfx
     sfx_initials_left:
         file: initials_left.ogg
-        volume: 0.75
+        volume: 1
         track: sfx
     sfx_initials_right:
         file: initials_right.ogg
-        volume: 0.75
+        volume: 1
         track: sfx
     voice_laugh:
         file: tilt_laugh.ogg
