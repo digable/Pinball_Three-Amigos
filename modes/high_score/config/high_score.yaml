@@ -59,6 +59,8 @@ slide_player:
 slides:
   _overwrite: True
   high_score_enter_initials:
+  - type: image
+    image: Amigos_frame
   - type: text
     # style: tall_title
     font_size: 50
