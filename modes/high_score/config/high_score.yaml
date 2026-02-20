@@ -62,8 +62,7 @@ slides:
   - type: text
     # style: tall_title
     font_size: 50
-    text: DRINKER (player_num)
-    font: WESTERN_LIGHT
+    text: AMIGO (player_num)
     color: ffff00
     anchor_x: left
     anchor_y: bottom
