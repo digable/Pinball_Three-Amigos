@@ -1,4 +1,5 @@
 #config_version=5
+
 game:
   balls_per_game: 3
   max_players: 4
@@ -40,6 +41,8 @@ images:
     file: LuckyDay.png
   Amigos_ned:
     file: NedNederlander.png
+  Amigos_frame:
+    file: blank_frame.png
   Amigos_billboard:
     file: Billboard.png
 
