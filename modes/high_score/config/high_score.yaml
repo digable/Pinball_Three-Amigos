@@ -13,11 +13,11 @@ high_score:
   # define your high score categories and the awards
   categories: !!omap
   - score:
-      - GRAND DRUNKARD
-      - TOP DRUNKARD 1
-      - TOP DRUNKARD 2
-      - TOP DRUNKARD 3
-      - TOP DRUNKARD 4
+      - El Amigo Supremo
+      - Amigo 1
+      - Amigo 2
+      - Amigo 3
+      - Amigo 4
   - loops:
       - LOOP CHAMP
   - completed_spins:
