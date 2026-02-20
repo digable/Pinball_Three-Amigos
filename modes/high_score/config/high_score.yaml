@@ -41,18 +41,20 @@ sound_player:
     song_enter_initials:
       action: play
       loops: 0
+  s_left_flipper_active:
+    sfx_initials_left:
+      action: play
+      loops: 0
+  s_right_flipper_active:
+    sfx_initials_right:
+      action: play
+      loops: 0
 
 # optional: change the slides (you can omit all the following)
 slide_player:
   _overwrite: True
   high_score_enter_initials: high_score_enter_initials
   high_score_award_display: high_score_award_display
-
-sound_player:
-  mode_base_started:
-    song_enter_initials:
-      action: play
-      #loops: -1  
 
 slides:
   _overwrite: True
