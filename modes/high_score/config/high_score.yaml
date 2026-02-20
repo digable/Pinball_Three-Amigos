@@ -61,7 +61,7 @@ slides:
   high_score_enter_initials:
   - type: image
     image: Amigos_frame
-    z: -10
+    target: background
   - type: text
     # style: tall_title
     font_size: 50
