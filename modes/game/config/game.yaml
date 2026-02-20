@@ -1,16 +1,13 @@
 #config_version=5
 
-sound_player:
-  ball_started:
-    song_01:
-      action: stop    
+sound_player:   
   player_adding{number==1}:
-    song_01:
-      action: play
-      #loops: -1  
     voice_add_player_1:
       action: play
       loops: 0
+    song_01:
+      action: play
+      #loops: -1  
   player_adding{number==2}:
       voice_add_player_2:
         action: play
