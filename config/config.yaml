@@ -18,6 +18,11 @@ modes:
   - base
   - high_score
 
+fonts:
+  amigo_main:
+    file: WESTERN_LIGHT.ttf
+    size: 60
+
 slides:
   welcome_slide:
     widgets:
