@@ -64,7 +64,7 @@ widgets:
   #INFO: Player 1 name, when they are playing
   mp_name_widget_player_1:
     - type: text
-      text: Drunkard 1
+      text: Amigo 1
       style: base_player1_display
       
   #INFO: Player 2 score, for when they're not playing
@@ -78,7 +78,7 @@ widgets:
   #INFO: Player 2 name, when they are playing
   mp_name_widget_player_2:
     - type: text
-      text: Drunkard 2
+      text: Amigo 2
       style: base_player2_display
 
   #INFO: Player 3 score, for when they're not playing
@@ -92,7 +92,7 @@ widgets:
   #INFO: Player 3 name, when they are playing
   mp_name_widget_player_3:
     - type: text
-      text: Drunkard 3
+      text: Amigo 3
       style: base_player3_display
 
   #INFO: Player 4 score, for when they're not playing
@@ -106,7 +106,7 @@ widgets:
   #INFO: Player 4 name, when they are playing
   mp_name_widget_player_4:
     - type: text
-      text: Drunkard 4
+      text: Amigo 4
       style: base_player4_display
 
 widget_player:
