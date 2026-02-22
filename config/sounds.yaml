@@ -157,6 +157,10 @@ sounds:
         file: you_are_very_great.wav
         volume: 1
         track: voice
+    voice_real_bullets:
+        file: oh_great_real_bullets.wav
+        volume: 1
+        track: voice
 
 track_player:
     stop_all_tracks:
