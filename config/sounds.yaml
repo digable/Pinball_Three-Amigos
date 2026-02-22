@@ -123,7 +123,7 @@ sounds:
         track: sfx
     sfx_spinner_sew:
         file: spinner_sew.ogg
-        volume: 1
+        volume: 0.50
         track: sfx
     voice_laugh:
         file: tilt_laugh.ogg
@@ -151,6 +151,10 @@ sounds:
         track: voice
     voice_add_player_4:
         file: add_player_4.ogg
+        volume: 1
+        track: voice
+    voice_very_great:
+        file: you_are_very_great.wav
         volume: 1
         track: voice
 
