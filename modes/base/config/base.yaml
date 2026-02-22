@@ -62,6 +62,23 @@ sound_player:
     voice_real_bullets:
       action: play
       loops: 0
+  s_L_RightRamp_active:
+    sfx_pot_crash:
+      action: play
+      loops: 0
+  s_R_RightRamp_active:
+    sfx_pot_crash:
+      action: play
+      loops: 0
+  s_C_CaptiveStanding_active:
+    sfx_gunshot:
+      action: play
+      loops: 0
+  s_right_jet_active:
+    sfx_gunshot:
+      action: play
+      loops: 0
+
 
 slide_player:
   drop_target_bank_dt_bank_down:
