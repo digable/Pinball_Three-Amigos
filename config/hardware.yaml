@@ -61,6 +61,7 @@ widget_styles:
     anchor_y: top
     x: center+70
   attract_mode_high_score_display_score:
+    font_name: ataurus3d
     font_size: 30
     anchor_x: left
     anchor_y: top
