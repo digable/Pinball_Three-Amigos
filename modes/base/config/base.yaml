@@ -54,6 +54,14 @@ sound_player:
     sfx_spinner_sew:
       action: play
       loops: 0
+  s_L_circle_active:
+    voice_very_great:
+      action: play
+      loops: 0
+  drop_target_bank_dt_bank_down:
+    voice_real_bullets:
+      action: play
+      loops: 0
 
 slide_player:
   drop_target_bank_dt_bank_down:
