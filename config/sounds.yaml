@@ -125,6 +125,14 @@ sounds:
         file: spinner_sew.ogg
         volume: 0.50
         track: sfx
+    sfx_gunshot:
+        file: gunshot.ogg
+        volume: 1
+        track: sfx
+    sfx_pot_crash:
+        file: pot_crash.ogg
+        volume: 0.50
+        track: sfx
     voice_laugh:
         file: tilt_laugh.ogg
         volume: 0.75
