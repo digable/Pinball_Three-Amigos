@@ -55,7 +55,7 @@ slide_player:
   drop_target_bank_dt_bank_down:
     mode_base_bank_cleared:
       target: window      # Explicitly tell it where to go
-      expire: 2s
+      expire: 5s
       priority: 1000      # Make it high to "overrule" everything
     skill_success_slide:
       target: window      # Explicitly tell it where to go
